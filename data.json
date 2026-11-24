@@ -21,20 +21,20 @@
       "accentRgb": "0, 110, 255",
       "projects": [
         {
-          "id": "proj-1795542480472",
+          "id": "proj-1795518214250",
           "order": 1,
-          "fileName": "project_10",
-          "title": "غلاف كاروسيل «متاهة سوق العمل»",
+          "fileName": "project_04",
+          "title": "حملة «فتح التقديم الرسمي عبر تطبيق قدّم»",
           "category": "",
           "aspectRatio": "auto",
-          "naturalRatio": "722/1023",
+          "naturalRatio": "1440/1800",
           "fitMode": "contain",
           "isLogo": false,
           "tags": [],
-          "description": "غلاف تفاعلي (Hook) لكاروسيل إرشادي يستهدف الشباب والخريجين الجدد الذين يواجهون التشتت عند دخول سوق العمل. ارتكزت الفكرة البصرية على استعارة «المتاهة الدائرية» باللون الأزرق فوق خلفية خطوط طبوغرافية ناعمة، مع خط عربي عريض وتوجيه بصري مباشر في قلب المتاهة («مرر الشاشة وخذ الخريطة») لدفع المتابع فوراً لتصفح باقي الشرائح.",
+          "description": "كاروسيل ترويجي يعلن افتتاح استمارة التقديم الرسمية لكلية التميز حصرياً عبر تطبيق «قدّم» تحت رسالة «صار وكت تختار قسمك». جمعت الفكرة البصرية بين عرض واجهة التطبيق على الهاتف الذكي والهوية التقنية لفريق @COE_MEDIA لإضفاء طابع عصري يسهّل على الطالب فهم آلية التقديم.",
           "metrics": [
             {
-              "val": "1",
+              "val": "2",
               "lbl": "عدد الشرائح"
             },
             {
@@ -44,20 +44,110 @@
           ],
           "slides": [
             {
-              "id": "s-1795542478079_to4u",
+              "id": "s-1795518173583_z010",
               "order": 1,
-              "fileName": "569b34bb-219e-49f3-b188-0b0a5097125a.jpg",
-              "caption": "569b34bb 219e 49f3 b188 0b0a5097125a",
-              "thumbUrl": "assets/thumbs/img_1795542478079_to4u.webp",
-              "fullUrl": "assets/full/img_1795542478079_to4u.webp",
-              "w": 722,
-              "h": 1023
+              "fileName": "التقديم-الرسمي---1.png",
+              "caption": "التقديم الرسمي 1",
+              "thumbUrl": "assets/thumbs/img_1795518173583_z010.webp",
+              "fullUrl": "assets/full/img_1795518173583_z010.webp",
+              "w": 1440,
+              "h": 1800
+            },
+            {
+              "id": "s-1795518173890_49uv",
+              "order": 2,
+              "fileName": "التقديم-الرسمي---2.png",
+              "caption": "التقديم الرسمي 2",
+              "thumbUrl": "assets/thumbs/img_1795518173890_49uv.webp",
+              "fullUrl": "assets/full/img_1795518173890_49uv.webp",
+              "w": 1440,
+              "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795516697344",
+          "order": 2,
+          "fileName": "project_02",
+          "title": "كاروسيل «شلون تسجل بكلية التميز؟»",
+          "category": "",
+          "aspectRatio": "4/5",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [],
+          "description": "كاروسيل إرشادي من 7 شرائح يستهدف خريجي السادس الإعدادي، يبسّط خطوات التقديم لكلية التميز بدءاً من الامتحان الوطني والمقابلة الشخصية باللغة الإنجليزية حتى تثبيت القبول المباشر دون إلغاء القبول المركزي. اعتمدت الفكرة البصرية على تسلسل بصري واضح يدمج شخصية الكلية مع بطاقات معلوماتية مختصرة تشجّع المتابع على تمرير الشرائح حتى النهاية.",
+          "metrics": [
+            {
+              "val": "7",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795516642001_8wgv",
+              "order": 1,
+              "fileName": "شلون تسجل بالتميز - 1.png",
+              "caption": "شلون تسجل بالتميز   1",
+              "thumbUrl": "assets/thumbs/img_1795516642001_8wgv.webp",
+              "fullUrl": "assets/full/img_1795516642001_8wgv.webp"
+            },
+            {
+              "id": "s-1795516642379_70gj",
+              "order": 2,
+              "fileName": "شلون تسجل بالتميز - 2.png",
+              "caption": "شلون تسجل بالتميز   2",
+              "thumbUrl": "assets/thumbs/img_1795516642379_70gj.webp",
+              "fullUrl": "assets/full/img_1795516642379_70gj.webp"
+            },
+            {
+              "id": "s-1795516642756_0gq5",
+              "order": 3,
+              "fileName": "شلون تسجل بالتميز - 3.png",
+              "caption": "شلون تسجل بالتميز   3",
+              "thumbUrl": "assets/thumbs/img_1795516642756_0gq5.webp",
+              "fullUrl": "assets/full/img_1795516642756_0gq5.webp"
+            },
+            {
+              "id": "s-1795516643191_b2k6",
+              "order": 4,
+              "fileName": "شلون تسجل بالتميز - 4.png",
+              "caption": "شلون تسجل بالتميز   4",
+              "thumbUrl": "assets/thumbs/img_1795516643191_b2k6.webp",
+              "fullUrl": "assets/full/img_1795516643191_b2k6.webp"
+            },
+            {
+              "id": "s-1795516643587_3gji",
+              "order": 5,
+              "fileName": "شلون تسجل بالتميز - 5.png",
+              "caption": "شلون تسجل بالتميز   5",
+              "thumbUrl": "assets/thumbs/img_1795516643587_3gji.webp",
+              "fullUrl": "assets/full/img_1795516643587_3gji.webp"
+            },
+            {
+              "id": "s-1795516643984_4obz",
+              "order": 6,
+              "fileName": "شلون تسجل بالتميز - 6.png",
+              "caption": "شلون تسجل بالتميز   6",
+              "thumbUrl": "assets/thumbs/img_1795516643984_4obz.webp",
+              "fullUrl": "assets/full/img_1795516643984_4obz.webp"
+            },
+            {
+              "id": "s-1795516644375_toe8",
+              "order": 7,
+              "fileName": "شلون تسجل بالتميز - 7.png",
+              "caption": "شلون تسجل بالتميز   7",
+              "thumbUrl": "assets/thumbs/img_1795516644375_toe8.webp",
+              "fullUrl": "assets/full/img_1795516644375_toe8.webp"
             }
           ]
         },
         {
           "id": "proj-1795542437991",
-          "order": 2,
+          "order": 3,
           "fileName": "project_09",
           "title": "بوستر ورشة «التسويق الوظيفي من الصفر»",
           "category": "",
@@ -92,7 +182,7 @@
         },
         {
           "id": "proj-1795542386951",
-          "order": 3,
+          "order": 4,
           "fileName": "project_08",
           "title": "بوست تهنئة «عيد الغدير الأغر»",
           "category": "",
@@ -127,7 +217,7 @@
         },
         {
           "id": "proj-1795539693649",
-          "order": 4,
+          "order": 5,
           "fileName": "project_07",
           "title": "اليوم المفتوح",
           "category": "",
@@ -172,7 +262,7 @@
         },
         {
           "id": "proj-1795539034870",
-          "order": 5,
+          "order": 6,
           "fileName": "project_05",
           "title": "حملة «فتح التسجيل وشروط الاختبار الوطني»",
           "category": "",
@@ -210,51 +300,6 @@
               "caption": "فتح التسجيل في كلية التميز 2",
               "thumbUrl": "assets/thumbs/img_1795539013643_r9z1.webp",
               "fullUrl": "assets/full/img_1795539013643_r9z1.webp",
-              "w": 1440,
-              "h": 1800
-            }
-          ]
-        },
-        {
-          "id": "proj-1795518214250",
-          "order": 6,
-          "fileName": "project_04",
-          "title": "حملة «فتح التقديم الرسمي عبر تطبيق قدّم»",
-          "category": "",
-          "aspectRatio": "auto",
-          "naturalRatio": "1440/1800",
-          "fitMode": "contain",
-          "isLogo": false,
-          "tags": [],
-          "description": "كاروسيل ترويجي يعلن افتتاح استمارة التقديم الرسمية لكلية التميز حصرياً عبر تطبيق «قدّم» تحت رسالة «صار وكت تختار قسمك». جمعت الفكرة البصرية بين عرض واجهة التطبيق على الهاتف الذكي والهوية التقنية لفريق @COE_MEDIA لإضفاء طابع عصري يسهّل على الطالب فهم آلية التقديم.",
-          "metrics": [
-            {
-              "val": "2",
-              "lbl": "عدد الشرائح"
-            },
-            {
-              "val": "2026",
-              "lbl": "السنة"
-            }
-          ],
-          "slides": [
-            {
-              "id": "s-1795518173583_z010",
-              "order": 1,
-              "fileName": "التقديم-الرسمي---1.png",
-              "caption": "التقديم الرسمي 1",
-              "thumbUrl": "assets/thumbs/img_1795518173583_z010.webp",
-              "fullUrl": "assets/full/img_1795518173583_z010.webp",
-              "w": 1440,
-              "h": 1800
-            },
-            {
-              "id": "s-1795518173890_49uv",
-              "order": 2,
-              "fileName": "التقديم-الرسمي---2.png",
-              "caption": "التقديم الرسمي 2",
-              "thumbUrl": "assets/thumbs/img_1795518173890_49uv.webp",
-              "fullUrl": "assets/full/img_1795518173890_49uv.webp",
               "w": 1440,
               "h": 1800
             }
@@ -397,88 +442,8 @@
           ]
         },
         {
-          "id": "proj-1795516697344",
-          "order": 8,
-          "fileName": "project_02",
-          "title": "كاروسيل «شلون تسجل بكلية التميز؟»",
-          "category": "",
-          "aspectRatio": "4/5",
-          "fitMode": "contain",
-          "isLogo": false,
-          "tags": [],
-          "description": "كاروسيل إرشادي من 7 شرائح يستهدف خريجي السادس الإعدادي، يبسّط خطوات التقديم لكلية التميز بدءاً من الامتحان الوطني والمقابلة الشخصية باللغة الإنجليزية حتى تثبيت القبول المباشر دون إلغاء القبول المركزي. اعتمدت الفكرة البصرية على تسلسل بصري واضح يدمج شخصية الكلية مع بطاقات معلوماتية مختصرة تشجّع المتابع على تمرير الشرائح حتى النهاية.",
-          "metrics": [
-            {
-              "val": "7",
-              "lbl": "عدد الشرائح"
-            },
-            {
-              "val": "2026",
-              "lbl": "السنة"
-            }
-          ],
-          "slides": [
-            {
-              "id": "s-1795516642001_8wgv",
-              "order": 1,
-              "fileName": "شلون تسجل بالتميز - 1.png",
-              "caption": "شلون تسجل بالتميز   1",
-              "thumbUrl": "assets/thumbs/img_1795516642001_8wgv.webp",
-              "fullUrl": "assets/full/img_1795516642001_8wgv.webp"
-            },
-            {
-              "id": "s-1795516642379_70gj",
-              "order": 2,
-              "fileName": "شلون تسجل بالتميز - 2.png",
-              "caption": "شلون تسجل بالتميز   2",
-              "thumbUrl": "assets/thumbs/img_1795516642379_70gj.webp",
-              "fullUrl": "assets/full/img_1795516642379_70gj.webp"
-            },
-            {
-              "id": "s-1795516642756_0gq5",
-              "order": 3,
-              "fileName": "شلون تسجل بالتميز - 3.png",
-              "caption": "شلون تسجل بالتميز   3",
-              "thumbUrl": "assets/thumbs/img_1795516642756_0gq5.webp",
-              "fullUrl": "assets/full/img_1795516642756_0gq5.webp"
-            },
-            {
-              "id": "s-1795516643191_b2k6",
-              "order": 4,
-              "fileName": "شلون تسجل بالتميز - 4.png",
-              "caption": "شلون تسجل بالتميز   4",
-              "thumbUrl": "assets/thumbs/img_1795516643191_b2k6.webp",
-              "fullUrl": "assets/full/img_1795516643191_b2k6.webp"
-            },
-            {
-              "id": "s-1795516643587_3gji",
-              "order": 5,
-              "fileName": "شلون تسجل بالتميز - 5.png",
-              "caption": "شلون تسجل بالتميز   5",
-              "thumbUrl": "assets/thumbs/img_1795516643587_3gji.webp",
-              "fullUrl": "assets/full/img_1795516643587_3gji.webp"
-            },
-            {
-              "id": "s-1795516643984_4obz",
-              "order": 6,
-              "fileName": "شلون تسجل بالتميز - 6.png",
-              "caption": "شلون تسجل بالتميز   6",
-              "thumbUrl": "assets/thumbs/img_1795516643984_4obz.webp",
-              "fullUrl": "assets/full/img_1795516643984_4obz.webp"
-            },
-            {
-              "id": "s-1795516644375_toe8",
-              "order": 7,
-              "fileName": "شلون تسجل بالتميز - 7.png",
-              "caption": "شلون تسجل بالتميز   7",
-              "thumbUrl": "assets/thumbs/img_1795516644375_toe8.webp",
-              "fullUrl": "assets/full/img_1795516644375_toe8.webp"
-            }
-          ]
-        },
-        {
           "id": "proj-1795516583264",
-          "order": 9,
+          "order": 8,
           "fileName": "project_01",
           "title": "بوست «افتتاح نادي الروبوتات»",
           "category": "",
@@ -510,7 +475,7 @@
         },
         {
           "id": "proj-1795539376455",
-          "order": 10,
+          "order": 9,
           "fileName": "project_07",
           "title": "بوستر «بطولة كرة القدم»",
           "category": "بوستر",
@@ -550,6 +515,41 @@
               "fullUrl": "assets/full/img_1795539431691_zeg0.webp",
               "w": 1344,
               "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795542480472",
+          "order": 10,
+          "fileName": "project_10",
+          "title": "غلاف كاروسيل «متاهة سوق العمل»",
+          "category": "",
+          "aspectRatio": "auto",
+          "naturalRatio": "722/1023",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [],
+          "description": "غلاف تفاعلي (Hook) لكاروسيل إرشادي يستهدف الشباب والخريجين الجدد الذين يواجهون التشتت عند دخول سوق العمل. ارتكزت الفكرة البصرية على استعارة «المتاهة الدائرية» باللون الأزرق فوق خلفية خطوط طبوغرافية ناعمة، مع خط عربي عريض وتوجيه بصري مباشر في قلب المتاهة («مرر الشاشة وخذ الخريطة») لدفع المتابع فوراً لتصفح باقي الشرائح.",
+          "metrics": [
+            {
+              "val": "1",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795542478079_to4u",
+              "order": 1,
+              "fileName": "569b34bb-219e-49f3-b188-0b0a5097125a.jpg",
+              "caption": "569b34bb 219e 49f3 b188 0b0a5097125a",
+              "thumbUrl": "assets/thumbs/img_1795542478079_to4u.webp",
+              "fullUrl": "assets/full/img_1795542478079_to4u.webp",
+              "w": 722,
+              "h": 1023
             }
           ]
         }
