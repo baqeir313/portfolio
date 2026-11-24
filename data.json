@@ -19,7 +19,120 @@
       "subtitle": "بوستات سوشيال ميديا",
       "accent": "#006eff",
       "accentRgb": "0, 110, 255",
-      "projects": []
+      "projects": [
+        {
+          "id": "proj-1795516697344",
+          "order": 1,
+          "fileName": "project_02",
+          "title": "كاروسيل «شلون تسجل بكلية التميز؟»",
+          "category": "",
+          "aspectRatio": "4/5",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [],
+          "description": "كاروسيل إرشادي من 7 شرائح يستهدف خريجي السادس الإعدادي، يبسّط خطوات التقديم لكلية التميز بدءاً من الامتحان الوطني والمقابلة الشخصية باللغة الإنجليزية حتى تثبيت القبول المباشر دون إلغاء القبول المركزي. اعتمدت الفكرة البصرية على تسلسل بصري واضح يدمج شخصية الكلية مع بطاقات معلوماتية مختصرة تشجّع المتابع على تمرير الشرائح حتى النهاية.",
+          "metrics": [
+            {
+              "val": "7",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795516642001_8wgv",
+              "order": 1,
+              "fileName": "شلون تسجل بالتميز - 1.png",
+              "caption": "شلون تسجل بالتميز   1",
+              "thumbUrl": "assets/thumbs/img_1795516642001_8wgv.webp",
+              "fullUrl": "assets/full/img_1795516642001_8wgv.webp"
+            },
+            {
+              "id": "s-1795516642379_70gj",
+              "order": 2,
+              "fileName": "شلون تسجل بالتميز - 2.png",
+              "caption": "شلون تسجل بالتميز   2",
+              "thumbUrl": "assets/thumbs/img_1795516642379_70gj.webp",
+              "fullUrl": "assets/full/img_1795516642379_70gj.webp"
+            },
+            {
+              "id": "s-1795516642756_0gq5",
+              "order": 3,
+              "fileName": "شلون تسجل بالتميز - 3.png",
+              "caption": "شلون تسجل بالتميز   3",
+              "thumbUrl": "assets/thumbs/img_1795516642756_0gq5.webp",
+              "fullUrl": "assets/full/img_1795516642756_0gq5.webp"
+            },
+            {
+              "id": "s-1795516643191_b2k6",
+              "order": 4,
+              "fileName": "شلون تسجل بالتميز - 4.png",
+              "caption": "شلون تسجل بالتميز   4",
+              "thumbUrl": "assets/thumbs/img_1795516643191_b2k6.webp",
+              "fullUrl": "assets/full/img_1795516643191_b2k6.webp"
+            },
+            {
+              "id": "s-1795516643587_3gji",
+              "order": 5,
+              "fileName": "شلون تسجل بالتميز - 5.png",
+              "caption": "شلون تسجل بالتميز   5",
+              "thumbUrl": "assets/thumbs/img_1795516643587_3gji.webp",
+              "fullUrl": "assets/full/img_1795516643587_3gji.webp"
+            },
+            {
+              "id": "s-1795516643984_4obz",
+              "order": 6,
+              "fileName": "شلون تسجل بالتميز - 6.png",
+              "caption": "شلون تسجل بالتميز   6",
+              "thumbUrl": "assets/thumbs/img_1795516643984_4obz.webp",
+              "fullUrl": "assets/full/img_1795516643984_4obz.webp"
+            },
+            {
+              "id": "s-1795516644375_toe8",
+              "order": 7,
+              "fileName": "شلون تسجل بالتميز - 7.png",
+              "caption": "شلون تسجل بالتميز   7",
+              "thumbUrl": "assets/thumbs/img_1795516644375_toe8.webp",
+              "fullUrl": "assets/full/img_1795516644375_toe8.webp"
+            }
+          ]
+        },
+        {
+          "id": "proj-1795516583264",
+          "order": 2,
+          "fileName": "project_01",
+          "title": "بوست «افتتاح نادي الروبوتات»",
+          "category": "",
+          "aspectRatio": "4/5",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [],
+          "description": "تصميم إعلاني لإطلاق نادي الروبوتات في كلية التميز يستهدف الطلبة المهتمين بالتقنية والهندسة والابتكار. اختيرت خلفية بيضاء نظيفة وتكوين بصري حاد يمنح التصميم طابعاً تقنياً حديثاً ويبرز الهوية الهندسية للنادي بعيداً عن الازدحام البصري.",
+          "metrics": [
+            {
+              "val": "1",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795516511081_l5dh",
+              "order": 1,
+              "fileName": "قالب-خلفية-بيضة-بوست (2).png",
+              "caption": "قالب خلفية بيضة بوست (2)",
+              "thumbUrl": "assets/thumbs/img_1795516511081_l5dh.webp",
+              "fullUrl": "assets/full/img_1795516511081_l5dh.webp"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "cnq313",
