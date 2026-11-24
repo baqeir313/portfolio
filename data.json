@@ -21,8 +21,43 @@
       "accentRgb": "0, 110, 255",
       "projects": [
         {
-          "id": "proj-1795539034870",
+          "id": "proj-1795539376455",
           "order": 1,
+          "fileName": "project_06",
+          "title": "بوستر «بطولة كرة القدم»",
+          "category": "بوستر",
+          "aspectRatio": "auto",
+          "naturalRatio": "1450/1800",
+          "fitMode": "contain",
+          "isLogo": true,
+          "tags": [],
+          "description": "بوستر رياضي ترويجي لإعلان بطولة كرة القدم لطلبة كلية التميز بهدف تحفيز المشاركة الطلابية ورفع الحماس داخل الكلية. اعتمد التنفيذ على تكوين بصري ديناميكي وإضاءة عالية التباين تعكس روح المنافسة الرياضية مع الحفاظ على انسجام الألوان مع هوية الكلية.",
+          "metrics": [
+            {
+              "val": "1",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795539123600_l7fh",
+              "order": 1,
+              "fileName": "Generated-Image-October-18,-2026---10_26PM.png",
+              "caption": "Generated Image October 18, 2026 10 26PM",
+              "thumbUrl": "assets/thumbs/img_1795539123600_l7fh.webp",
+              "fullUrl": "assets/full/img_1795539123600_l7fh.webp",
+              "w": 1450,
+              "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795539034870",
+          "order": 2,
           "fileName": "project_05",
           "title": "حملة «فتح التسجيل وشروط الاختبار الوطني»",
           "category": "",
@@ -67,7 +102,7 @@
         },
         {
           "id": "proj-1795518214250",
-          "order": 2,
+          "order": 3,
           "fileName": "project_04",
           "title": "حملة «فتح التقديم الرسمي عبر تطبيق قدّم»",
           "category": "",
@@ -112,7 +147,7 @@
         },
         {
           "id": "proj-1795516836818",
-          "order": 3,
+          "order": 4,
           "fileName": "project_03",
           "title": "كاروسيل «شنو تكدر تسوي بكلية التميز؟»",
           "category": "",
@@ -248,7 +283,7 @@
         },
         {
           "id": "proj-1795516697344",
-          "order": 4,
+          "order": 5,
           "fileName": "project_02",
           "title": "كاروسيل «شلون تسجل بكلية التميز؟»",
           "category": "",
@@ -328,7 +363,7 @@
         },
         {
           "id": "proj-1795516583264",
-          "order": 5,
+          "order": 6,
           "fileName": "project_01",
           "title": "بوست «افتتاح نادي الروبوتات»",
           "category": "",
