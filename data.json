@@ -10,5 +10,16 @@
     "contactLabel": "تواصل معي",
     "contactUrl": "https://t.me/baqir_313"
   },
-  "folders": []
+  "folders": [
+    {
+      "id": "coe_media",
+      "order": 1,
+      "tag": "سوشيال",
+      "title": "فريق اعلام التميز",
+      "subtitle": "بوستات سوشيال ميديا",
+      "accent": "#006eff",
+      "accentRgb": "0, 110, 255",
+      "projects": []
+    }
+  ]
 }
