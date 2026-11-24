@@ -460,8 +460,65 @@
       "accentRgb": "0, 229, 160",
       "projects": [
         {
-          "id": "proj-1795540388970",
+          "id": "proj-1795540480880",
           "order": 1,
+          "fileName": "project_04",
+          "title": "تصميم «جدول الدروس الثقافية ليوم الجمعة»",
+          "category": "بوست سوشيال",
+          "aspectRatio": "auto",
+          "naturalRatio": "1086/1448",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "تحويل الجداول الورقية للجلسات الثقافية والروحانية الأسبوعية (الفكرية الدينية، برنامج أقرأ، والفعاليات الهادفة) إلى تصميم رقمي رسمي ومنظم لطلبة المراحل الإعدادية والمتوسطة. ركّز التصميم على الشبكة الجدولية الواضحة لتمكين الطالب من قراءة الأوقات والأساتذة بلمحة واحدة على شاشة الهاتف.",
+          "metrics": [
+            {
+              "val": "3",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540476865_e2xx",
+              "order": 1,
+              "fileName": "الثالث_9-11.png",
+              "caption": "الثالث 9 11",
+              "thumbUrl": "assets/thumbs/img_1795540476865_e2xx.webp",
+              "fullUrl": "assets/full/img_1795540476865_e2xx.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540477049_o05u",
+              "order": 2,
+              "fileName": "الخامس_9-11.png",
+              "caption": "الخامس 9 11",
+              "thumbUrl": "assets/thumbs/img_1795540477049_o05u.webp",
+              "fullUrl": "assets/full/img_1795540477049_o05u.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540477218_9n1e",
+              "order": 3,
+              "fileName": "الرابع_9-11.png",
+              "caption": "الرابع 9 11",
+              "thumbUrl": "assets/thumbs/img_1795540477218_9n1e.webp",
+              "fullUrl": "assets/full/img_1795540477218_9n1e.webp",
+              "w": 1086,
+              "h": 1448
+            }
+          ]
+        },
+        {
+          "id": "proj-1795540388970",
+          "order": 2,
           "fileName": "project_03",
           "title": "كاروسيل «دليل أولياء الأمور — ابنك رايح للثالث؟»",
           "category": "كاروسيل متسلسل",
@@ -558,7 +615,7 @@
         },
         {
           "id": "proj-1795540301458",
-          "order": 2,
+          "order": 3,
           "fileName": "project_02",
           "title": "صيف الفلم",
           "category": "بوست سوشال",
@@ -595,7 +652,7 @@
         },
         {
           "id": "proj-1795540091805",
-          "order": 3,
+          "order": 4,
           "fileName": "project_01",
           "title": "سلسلة تكريم «أوائل مركز القلم»",
           "category": "كاروسيل متسلسل",
