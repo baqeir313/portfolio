@@ -893,8 +893,75 @@
       "accentRgb": "207, 93, 238",
       "projects": [
         {
-          "id": "proj-1795541156912",
+          "id": "proj-1795541300474",
           "order": 1,
+          "fileName": "project_02",
+          "title": "حملة ورشة «نخابرك بعدين — صناعة الـ CV الناجح»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1440/1800",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "Aziza ×  M.baqeir"
+          ],
+          "description": "حملة كاروسيل وبطاقة ضيف لورشة «صناعة الـ CV الناجح» بالتعاون مع Aziza ومنصة «سيرة» وبمشاركة ضيف من قسم استقطاب المواهب في شركة Zain Iraq. يستهدف المشروع الخريجين والباحثين عن عمل لتجاوز أنظمة الـ ATS، واعتمدت الفكرة البصرية على عنوان ساخر ولافت («نخابرك بعدين») يجذب الجمهور من أول شريحة ثم يقوده بسلاسة لمحاور الورشة ومميزاتها.",
+          "metrics": [
+            {
+              "val": "4",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795541293073_41vt",
+              "order": 1,
+              "fileName": "1---نخابرك-بعدين.png",
+              "caption": "1 نخابرك بعدين",
+              "thumbUrl": "assets/thumbs/img_1795541293073_41vt.webp",
+              "fullUrl": "assets/full/img_1795541293073_41vt.webp",
+              "w": 1440,
+              "h": 1800
+            },
+            {
+              "id": "s-1795541293553_6lyr",
+              "order": 2,
+              "fileName": "2---نخابرك-بعدين.png",
+              "caption": "2 نخابرك بعدين",
+              "thumbUrl": "assets/thumbs/img_1795541293553_6lyr.webp",
+              "fullUrl": "assets/full/img_1795541293553_6lyr.webp",
+              "w": 1440,
+              "h": 1800
+            },
+            {
+              "id": "s-1795541294034_h489",
+              "order": 3,
+              "fileName": "3---نخابرك-بعدين.png",
+              "caption": "3 نخابرك بعدين",
+              "thumbUrl": "assets/thumbs/img_1795541294034_h489.webp",
+              "fullUrl": "assets/full/img_1795541294034_h489.webp",
+              "w": 1440,
+              "h": 1800
+            },
+            {
+              "id": "s-1795541294245_aws3",
+              "order": 4,
+              "fileName": "الضيف.jpg",
+              "caption": "الضيف",
+              "thumbUrl": "assets/thumbs/img_1795541294245_aws3.webp",
+              "fullUrl": "assets/full/img_1795541294245_aws3.webp",
+              "w": 1122,
+              "h": 1402
+            }
+          ]
+        },
+        {
+          "id": "proj-1795541156912",
+          "order": 2,
           "fileName": "project_01",
           "title": "حملة ورشة «فكر بالمقلوب»",
           "category": "كاروسيل متسلسل",
