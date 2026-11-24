@@ -458,7 +458,95 @@
       "subtitle": "حملات تعليمية",
       "accent": "#00e5a0",
       "accentRgb": "0, 229, 160",
-      "projects": []
+      "projects": [
+        {
+          "id": "proj-1795540091805",
+          "order": 1,
+          "fileName": "project_01",
+          "title": "سلسلة تكريم «أوائل مركز القلم»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1344/1800",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "سلسلة تصاميم تكريمية موحّدة (أكثر من 13 بطاقة مبنية على قالب مرن) للاحتفاء بالطلبة الأوائل والمتفوقين في مركز القلم وتحفيز بقية الطلبة. تم بناء قالب بصري احتفالي رصين يحافظ على اتساق صور الطلبة وأسمائهم ومعدلاتهم عبر كامل السلسلة.",
+          "metrics": [
+            {
+              "val": "6",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540043132_wrzi",
+              "order": 1,
+              "fileName": "غلاف.png",
+              "caption": "غلاف",
+              "thumbUrl": "assets/thumbs/img_1795540043132_wrzi.webp",
+              "fullUrl": "assets/full/img_1795540043132_wrzi.webp",
+              "w": 1344,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540048561_7eut",
+              "order": 2,
+              "fileName": "1.png",
+              "caption": "1",
+              "thumbUrl": "assets/thumbs/img_1795540048561_7eut.webp",
+              "fullUrl": "assets/full/img_1795540048561_7eut.webp",
+              "w": 1344,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540048915_dvmt",
+              "order": 3,
+              "fileName": "2.png",
+              "caption": "2",
+              "thumbUrl": "assets/thumbs/img_1795540048915_dvmt.webp",
+              "fullUrl": "assets/full/img_1795540048915_dvmt.webp",
+              "w": 1344,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540049261_n0f5",
+              "order": 4,
+              "fileName": "3.png",
+              "caption": "3",
+              "thumbUrl": "assets/thumbs/img_1795540049261_n0f5.webp",
+              "fullUrl": "assets/full/img_1795540049261_n0f5.webp",
+              "w": 1344,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540052282_qtgl",
+              "order": 5,
+              "fileName": "12.png",
+              "caption": "12",
+              "thumbUrl": "assets/thumbs/img_1795540052282_qtgl.webp",
+              "fullUrl": "assets/full/img_1795540052282_qtgl.webp",
+              "w": 1344,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540052624_t4l2",
+              "order": 6,
+              "fileName": "13.png",
+              "caption": "13",
+              "thumbUrl": "assets/thumbs/img_1795540052624_t4l2.webp",
+              "fullUrl": "assets/full/img_1795540052624_t4l2.webp",
+              "w": 1344,
+              "h": 1800
+            }
+          ]
+        }
+      ]
     }
   ]
 }
