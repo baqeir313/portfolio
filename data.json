@@ -460,8 +460,85 @@
       "accentRgb": "0, 229, 160",
       "projects": [
         {
-          "id": "proj-1795540597223",
+          "id": "proj-1795540655204",
           "order": 1,
+          "fileName": "project_06",
+          "title": "كاروسيل «خرافات دراسية — أخطاء شائعة»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1086/1448",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "سلسلة كاروسيل تعليمية من 5 شرائح تصحّح المفاهيم الدراسية المغلوطة لدى الطلبة (مثل ربط قوة الحفظ برفع الصوت) عبر أسلوب مقارنة «الخرافة مقابل الحقيقة»، مع ربطها في الختام ببيئة مركز القلم القائمة على أسس علمية. ركّز التصميم على التباين الطباعي لتمييز الخطأ عن الصواب وجذب انتباه الطالب بسرعة.",
+          "metrics": [
+            {
+              "val": "5",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540650944_htbd",
+              "order": 1,
+              "fileName": "1.png",
+              "caption": "1",
+              "thumbUrl": "assets/thumbs/img_1795540650944_htbd.webp",
+              "fullUrl": "assets/full/img_1795540650944_htbd.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651136_n045",
+              "order": 2,
+              "fileName": "2.png",
+              "caption": "2",
+              "thumbUrl": "assets/thumbs/img_1795540651136_n045.webp",
+              "fullUrl": "assets/full/img_1795540651136_n045.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651332_ofhw",
+              "order": 3,
+              "fileName": "3.png",
+              "caption": "3",
+              "thumbUrl": "assets/thumbs/img_1795540651332_ofhw.webp",
+              "fullUrl": "assets/full/img_1795540651332_ofhw.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651523_kwbl",
+              "order": 4,
+              "fileName": "4.png",
+              "caption": "4",
+              "thumbUrl": "assets/thumbs/img_1795540651523_kwbl.webp",
+              "fullUrl": "assets/full/img_1795540651523_kwbl.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651705_94on",
+              "order": 5,
+              "fileName": "5.png",
+              "caption": "5",
+              "thumbUrl": "assets/thumbs/img_1795540651705_94on.webp",
+              "fullUrl": "assets/full/img_1795540651705_94on.webp",
+              "w": 1086,
+              "h": 1448
+            }
+          ]
+        },
+        {
+          "id": "proj-1795540597223",
+          "order": 2,
           "fileName": "project_05",
           "title": "كاروسيل «خطوات تلخيص كتاب — برنامج قراءة كتاب»",
           "category": "كاروسيل متسلسل",
@@ -528,7 +605,7 @@
         },
         {
           "id": "proj-1795540480880",
-          "order": 2,
+          "order": 3,
           "fileName": "project_04",
           "title": "تصميم «جدول الدروس الثقافية ليوم الجمعة»",
           "category": "بوست سوشيال",
@@ -585,7 +662,7 @@
         },
         {
           "id": "proj-1795540388970",
-          "order": 3,
+          "order": 4,
           "fileName": "project_03",
           "title": "كاروسيل «دليل أولياء الأمور — ابنك رايح للثالث؟»",
           "category": "كاروسيل متسلسل",
@@ -682,7 +759,7 @@
         },
         {
           "id": "proj-1795540301458",
-          "order": 4,
+          "order": 5,
           "fileName": "project_02",
           "title": "صيف الفلم",
           "category": "بوست سوشال",
@@ -719,7 +796,7 @@
         },
         {
           "id": "proj-1795540091805",
-          "order": 5,
+          "order": 6,
           "fileName": "project_01",
           "title": "سلسلة تكريم «أوائل مركز القلم»",
           "category": "كاروسيل متسلسل",
