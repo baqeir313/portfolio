@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>باقر محمد — معرض الأعمال التصميمية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       1. DESIGN SYSTEM TOKENS
+       ========================================================================== */
+    :root {
+      --bg-canvas: #090b0f;
+      --bg-surface: #11151d;
+      --bg-elevated: #171c26;
+      --bg-stage: #0d1017;
+      --grid-line: rgba(255, 255, 255, 0.045);
+      --text-primary: #f4f6fa;
+      --text-secondary: #98a2b3;
+      --text-muted: #667085;
+      --border-subtle: rgba(255, 255, 255, 0.09);
+      --border-strong: rgba(255, 255, 255, 0.18);
+      --glass-tint: rgba(20, 26, 36, 0.42);
+      --shadow-deep: 0 28px 60px -15px rgba(0, 0, 0, 0.72);
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+      --font-ar: 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+      --font-en: 'Space Grotesk', system-ui, sans-serif;
+    }
+
+    [data-theme="light"] {
+      --bg-canvas: #f3f5f9;
+      --bg-surface: #ffffff;
+      --bg-elevated: #eef2f8;
+      --bg-stage: #e9edf5;
+      --grid-line: rgba(15, 23, 42, 0.055);
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --border-subtle: rgba(15, 23, 42, 0.09);
+      --border-strong: rgba(15, 23, 42, 0.18);
+      --glass-tint: rgba(255, 255, 255, 0.38);
+      --shadow-deep: 0 24px 50px -15px rgba(15, 23, 42, 0.18);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-ar);
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-image:
+        linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+      background-size: 36px 36px;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    button, a { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; text-decoration: none; }
+
+    .icon-svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+    /* ==========================================================================
+       2. OS-STYLE EDITORIAL TOP BAR (CLEAN VISITOR INTERFACE)
+       ========================================================================== */
+    .os-header {
+      position: sticky;
+      top: 14px;
+      z-index: 60;
+      max-width: 1240px;
+      margin: 14px auto 0;
+      padding: 0 18px;
+    }
+
+    .os-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 16px;
+      border-radius: 18px;
+      background: color-mix(in srgb, var(--bg-surface) 84%, transparent);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+      flex-wrap: wrap;
+    }
+
+    .brand-cluster { display: flex; align-items: center; gap: 12px; }
+
+    .os-dots {
+      display: flex;
+      gap: 6px;
+      padding-left: 10px;
+      border-left: 1px solid var(--border-subtle);
+    }
+    .os-dots span { width: 9px; height: 9px; border-radius: 50%; }
+    .os-dots span:nth-child(1) { background: #ff5f56; }
+    .os-dots span:nth-child(2) { background: #ffbd2e; }
+    .os-dots span:nth-child(3) { background: #27c93f; }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 700;
+      font-size: 1.02rem;
+      letter-spacing: -0.01em;
+    }
+    .brand-badge {
+      font-family: var(--font-en);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: #00e5a0;
+      color: #090b0f;
+      letter-spacing: 0.04em;
+    }
+
+    .os-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+    .pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 14px;
+      border-radius: 12px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      transition: transform 0.2s var(--ease-spring), border-color 0.2s, background 0.2s;
+    }
+    .pill-btn:hover { transform: translateY(-1px); border-color: var(--border-strong); }
+    .pill-btn.primary {
+      background: var(--text-primary);
+      color: var(--bg-canvas);
+      border-color: transparent;
+    }
+
+    /* ==========================================================================
+       3. MAIN STAGE, HERO & BI-DIRECTIONAL SPATIAL TRANSITIONS
+       ========================================================================== */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 36px 20px 90px;
+    }
+
+    #homeView {
+      transition: opacity 0.38s var(--ease-spring), transform 0.44s var(--ease-spring), filter 0.34s ease;
+      transform-origin: center top;
+    }
+
+    #homeView.is-returning {
+      opacity: 0;
+      transform: scale(0.955) translateY(-14px);
+      filter: blur(6px);
+    }
+
+    .hero-block {
+      text-align: center;
+      max-width: 760px;
+      margin: 10px auto 54px;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+    }
+    .kicker-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #00e5a0;
+      box-shadow: 0 0 10px #00e5a0;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3.45rem);
+      font-weight: 700;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+    .hero-title span {
+      background: linear-gradient(120deg, #00e5a0, #1e88ff, #f5b800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-sub {
+      color: var(--text-secondary);
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       4. 3D FROSTED GLASS FOLDER SYSTEM
+       ========================================================================== */
+    .folders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+      gap: 44px 32px;
+      align-items: end;
+      transition: opacity 0.32s ease, transform 0.42s var(--ease-spring), filter 0.32s ease;
+    }
+
+    .folders-grid.is-transitioning .folder-card:not(.is-launching) {
+      opacity: 0.14;
+      transform: scale(0.92);
+      filter: blur(6px);
+    }
+
+    .folder-card {
+      position: relative;
+      padding-top: 64px;
+      cursor: pointer;
+      outline: none;
+      --rx: 0deg;
+      --ry: 0deg;
+      --px: 0px;
+      --py: 0px;
+      transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry));
+      transition: transform 0.42s var(--ease-spring), opacity 0.38s ease, filter 0.38s ease;
+      will-change: transform;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .folder-card.is-launching {
+      transform: scale(1.07) translateY(-12px);
+      z-index: 20;
+    }
+
+    .folder-card.is-returning-focus {
+      transform: scale(1.055) translateY(-10px);
+      z-index: 15;
+    }
+
+    .folder-stage {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 320 / 230;
+    }
+
+    /* Layer 0: Adaptive Ambient Glow */
+    .folder-aura {
+      position: absolute;
+      inset: 14% 8% -12% 8%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(var(--accent-rgb), 0.42) 0%, transparent 72%);
+      filter: blur(28px);
+      opacity: 0.55;
+      z-index: 0;
+      transition: opacity 0.4s ease, transform 0.4s var(--ease-spring);
+      pointer-events: none;
+    }
+    .folder-card:hover .folder-aura,
+    .folder-card.is-peeking .folder-aura {
+      opacity: 0.95;
+      transform: scale(1.08);
+    }
+
+    /* Layer 1: Folder Backplate */
+    .folder-backplate {
+      position: absolute;
+      inset: -14px 4px 8px 4px;
+      z-index: 1;
+      border-radius: 26px;
+      background: linear-gradient(
+        165deg,
+        rgba(var(--accent-rgb), 0.32) 0%,
+        color-mix(in srgb, var(--bg-surface) 88%, black) 60%
+      );
+      border: 1px solid rgba(var(--accent-rgb), 0.35);
+      box-shadow: var(--shadow-deep);
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 230' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M28,0 L108,0 C124,0 130,30 148,30 L292,30 Q320,30 320,58 L320,202 Q320,230 292,230 L28,230 Q0,230 0,202 L0,28 Q0,0 28,0 Z'/%3E%3C/svg%3E");
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 230' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M28,0 L108,0 C124,0 130,30 148,30 L292,30 Q320,30 320,58 L320,202 Q320,230 292,230 L28,230 Q0,230 0,202 L0,28 Q0,0 28,0 Z'/%3E%3C/svg%3E");
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+    }
+
+    /* Layer 2: Physical Artwork Cards tucked inside */
+    .folder-peek-stack {
+      position: absolute;
+      inset: -44px 16px 26px 16px;
+      z-index: 2;
+      pointer-events: none;
+      transform: translate3d(var(--px), var(--py), 0);
+      transition: transform 0.25s ease-out;
+    }
+
+    .peek-card {
+      position: absolute;
+      width: 44%;
+      aspect-ratio: 4 / 5;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.42);
+      transition: transform 0.5s var(--ease-spring), box-shadow 0.4s ease;
+      transform-origin: bottom center;
+      background: #141923;
+    }
+    .peek-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .peek-card.p0 { left: 6%;  top: 20px; transform: rotate(-9deg) translateY(8px); z-index: 1; }
+    .peek-card.p1 { left: 28%; top: 4px;  transform: rotate(1deg)  translateY(4px); z-index: 3; }
+    .peek-card.p2 { right: 6%; top: 18px; transform: rotate(10deg) translateY(8px); z-index: 2; }
+
+    .folder-card:hover .peek-card.p0,
+    .folder-card.is-peeking .peek-card.p0 { transform: rotate(-14deg) translate(-8px, -22px) scale(1.04); }
+    .folder-card:hover .peek-card.p1,
+    .folder-card.is-peeking .peek-card.p1 { transform: rotate(0deg) translateY(-30px) scale(1.07); }
+    .folder-card:hover .peek-card.p2,
+    .folder-card.is-peeking .peek-card.p2 { transform: rotate(15deg) translate(8px, -20px) scale(1.04); }
+
+    /* Layer 3: Frosted Acrylic Glass Front */
+    .folder-glass-front {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      backdrop-filter: blur(18px) saturate(175%);
+      -webkit-backdrop-filter: blur(18px) saturate(175%);
+      background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.22) 0%,
+        rgba(var(--accent-rgb), 0.24) 36%,
+        var(--glass-tint) 100%
+      );
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 230' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M28,0 L108,0 C124,0 130,34 148,34 L292,34 Q320,34 320,62 L320,202 Q320,230 292,230 L28,230 Q0,230 0,202 L0,28 Q0,0 28,0 Z'/%3E%3C/svg%3E");
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 230' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M28,0 L108,0 C124,0 130,34 148,34 L292,34 Q320,34 320,62 L320,202 Q320,230 292,230 L28,230 Q0,230 0,202 L0,28 Q0,0 28,0 Z'/%3E%3C/svg%3E");
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      transition: transform 0.45s var(--ease-spring);
+      transform-origin: bottom center;
+    }
+
+    .folder-glass-front::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* Layer 4: Luminous Specular Glass Edge Rim */
+    .folder-glass-rim {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      pointer-events: none;
+      transition: transform 0.45s var(--ease-spring);
+      transform-origin: bottom center;
+    }
+
+    /* Layer 5: Front Metadata */
+    .folder-content {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      padding: 16px 22px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      pointer-events: none;
+      transition: transform 0.45s var(--ease-spring);
+      transform-origin: bottom center;
+    }
+
+    .folder-card:hover .folder-glass-front,
+    .folder-card:hover .folder-glass-rim,
+    .folder-card:hover .folder-content {
+      transform: translateY(3px) scaleY(0.985);
+    }
+
+    .folder-tab-tag {
+      align-self: flex-end;
+      font-family: var(--font-en);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.34);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .folder-footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .folder-title-wrap h3 {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+      margin-bottom: 3px;
+    }
+    .folder-title-wrap p {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.84);
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .folder-open-pill {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: rgba(9, 11, 15, 0.78);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      transition: background 0.25s, color 0.25s, transform 0.25s var(--ease-spring);
+    }
+
+    .folder-card:hover .folder-open-pill,
+    .folder-card.is-peeking .folder-open-pill {
+      background: var(--accent);
+      color: #090b0f;
+      border-color: transparent;
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       5. INSIDE FOLDER WORKSPACE VIEW (SMOOTH ENTER & EXIT CHOREOGRAPHY)
+       ========================================================================== */
+    .workspace-view {
+      display: none;
+      opacity: 0;
+      transform: translateY(26px) scale(0.97);
+      filter: blur(6px);
+      transition: opacity 0.36s var(--ease-spring), transform 0.42s var(--ease-spring), filter 0.32s ease;
+    }
+    .workspace-view.is-visible { display: block; }
+    .workspace-view.is-active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0px);
+    }
+    .workspace-view.is-exiting {
+      opacity: 0;
+      transform: translateY(22px) scale(0.955);
+      filter: blur(8px);
+      pointer-events: none;
+    }
+
+    .workspace-banner {
+      position: relative;
+      overflow: hidden;
+      padding: 26px;
+      border-radius: var(--radius-lg);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .workspace-banner::before {
+      content: "";
+      position: absolute;
+      inset: -40% auto auto -10%;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(var(--ws-accent-rgb), 0.26), transparent 70%);
+      pointer-events: none;
+    }
+
+    .ws-meta { position: relative; z-index: 1; }
+    .ws-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+    }
+    .ws-title { font-size: clamp(1.5rem, 3.2vw, 2.2rem); font-weight: 700; margin-bottom: 6px; }
+    .ws-desc { color: var(--text-secondary); font-size: 0.94rem; }
+
+    /* Projects Grid (Uncropped Neutral Stage) */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 22px;
+      align-items: start;
+    }
+
+    .project-card {
+      position: relative;
+      border-radius: 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      transition: transform 0.35s var(--ease-spring), border-color 0.25s, box-shadow 0.35s;
+      display: flex;
+      flex-direction: column;
+      animation: cardPop 0.45s var(--ease-spring) backwards;
+    }
+
+    @keyframes cardPop {
+      from { opacity: 0; transform: translateY(18px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(var(--ws-accent-rgb), 0.55);
+      box-shadow: 0 20px 42px -16px rgba(0, 0, 0, 0.42);
+    }
+
+    .project-thumb-wrap {
+      position: relative;
+      background: var(--bg-stage);
+      overflow: hidden;
+      cursor: zoom-in;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .project-thumb-wrap.fit-cover { padding: 0; }
+    .project-thumb-wrap.backdrop-dark { background: #0c0e13 !important; }
+    .project-thumb-wrap.backdrop-light { background: #f8f9fa !important; }
+    .project-thumb-wrap.backdrop-checker {
+      background-color: #e5e7eb !important;
+      background-image:
+        linear-gradient(45deg, #cbd5e1 25%, transparent 25%),
+        linear-gradient(-45deg, #cbd5e1 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #cbd5e1 75%),
+        linear-gradient(-45deg, transparent 75%, #cbd5e1 75%) !important;
+      background-size: 16px 16px !important;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0px !important;
+    }
+
+    .project-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.55s var(--ease-spring);
+    }
+    .project-thumb-wrap.fit-cover img { object-fit: cover; }
+    .project-card:hover .project-thumb-wrap img { transform: scale(1.025); }
+
+    .carousel-indicator-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(9, 11, 15, 0.78);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-family: var(--font-en);
+      font-size: 0.72rem;
+      font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .backdrop-switcher {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      gap: 5px;
+      padding: 4px 6px;
+      border-radius: 999px;
+      background: rgba(9, 11, 15, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 4;
+    }
+    .bg-dot {
+      width: 14px; height: 14px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.45);
+    }
+    .bg-dot.d-dark { background: #0c0e13; }
+    .bg-dot.d-light { background: #f8f9fa; }
+    .bg-dot.d-checker { background: repeating-conic-gradient(#94a3b8 0% 25%, #e2e8f0 0% 50%) 50% / 7px 7px; }
+
+    .project-body {
+      padding: 16px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+    .project-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .mini-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 7px;
+      background: var(--bg-elevated);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+    .project-title { font-size: 1.05rem; font-weight: 700; cursor: pointer; }
+    .project-sub { font-size: 0.84rem; color: var(--text-secondary); line-height: 1.55; }
+
+    .empty-folder-box {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 64px 24px;
+      border-radius: 20px;
+      border: 1px dashed var(--border-strong);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       6. CAROUSEL LIGHTBOX MODAL (ZERO-CROP FULL RESOLUTION VIEWER)
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(5, 7, 11, 0.86);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      opacity: 0;
+      transition: opacity 0.24s ease;
+    }
+    .modal-backdrop.is-visible { display: flex; }
+    .modal-backdrop.is-open { opacity: 1; }
+
+    .studio-modal {
+      width: 100%;
+      max-width: 1120px;
+      max-height: 92vh;
+      overflow-y: auto;
+      border-radius: 24px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      box-shadow: 0 36px 80px rgba(0, 0, 0, 0.75);
+      display: flex;
+      flex-direction: column;
+      transform: scale(0.95) translateY(14px);
+      transition: transform 0.34s var(--ease-spring);
+    }
+    .modal-backdrop.is-open .studio-modal { transform: scale(1) translateY(0); }
+
+    .modal-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 22px;
+      border-bottom: 1px solid var(--border-subtle);
+      flex-wrap: wrap;
+    }
+
+    .modal-body-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
+      gap: 24px;
+      padding: 22px;
+    }
+    @media (max-width: 840px) { .modal-body-grid { grid-template-columns: 1fr; } }
+
+    .carousel-stage {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      min-height: 360px;
+      max-height: 66vh;
+      background: var(--bg-stage);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      touch-action: pan-y;
+    }
+    .carousel-stage.backdrop-dark { background: #0c0e13 !important; }
+    .carousel-stage.backdrop-light { background: #f8f9fa !important; }
+    .carousel-stage.backdrop-checker {
+      background-color: #e5e7eb !important;
+      background-image:
+        linear-gradient(45deg, #cbd5e1 25%, transparent 25%),
+        linear-gradient(-45deg, #cbd5e1 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #cbd5e1 75%),
+        linear-gradient(-45deg, transparent 75%, #cbd5e1 75%) !important;
+      background-size: 18px 18px !important;
+      background-position: 0 0, 0 9px, 9px -9px, -9px 0px !important;
+    }
+
+    .carousel-stage img {
+      max-width: 100%;
+      max-height: calc(66vh - 64px);
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      transition: opacity 0.22s ease;
+    }
+
+    .carousel-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(9, 11, 15, 0.74);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .carousel-nav-btn:hover { background: #fff; color: #090b0f; transform: translateY(-50%) scale(1.06); }
+    .carousel-nav-btn.prev { right: 12px; }
+    .carousel-nav-btn.next { left: 12px; }
+
+    .carousel-caption-bar {
+      position: absolute;
+      inset: auto 12px 12px 12px;
+      padding: 8px 14px;
+      border-radius: 12px;
+      background: rgba(9, 11, 15, 0.8);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.82rem;
+    }
+
+    .slides-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .slide-thumb {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      background: var(--bg-stage);
+      cursor: pointer;
+      aspect-ratio: 4 / 3;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .slide-thumb.is-current { border-color: #00e5a0; }
+    .slide-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .slide-num-pill {
+      position: absolute;
+      top: 4px; right: 4px;
+      font-family: var(--font-en);
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 2px 5px;
+      border-radius: 5px;
+      background: rgba(9, 11, 15, 0.82);
+      color: #fff;
+    }
+
+    .case-details { display: flex; flex-direction: column; gap: 16px; }
+    .metric-row { display: flex; gap: 8px; flex-wrap: wrap; }
+    .metric-box {
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      flex: 1;
+      min-width: 110px;
+    }
+    .metric-val { font-family: var(--font-en); font-size: 1.2rem; font-weight: 700; }
+    .metric-lbl { font-size: 0.74rem; color: var(--text-secondary); }
+
+    .local-notice {
+      max-width: 1240px;
+      margin: 0 auto 24px;
+      padding: 0 20px;
+      display: none;
+    }
+    .local-notice-inner {
+      padding: 10px 16px;
+      border-radius: 12px;
+      background: var(--bg-surface);
+      border: 1px dashed var(--border-strong);
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. PERSONAL EDITORIAL OS HEADER -->
+  <header class="os-header">
+    <nav class="os-bar">
+      <div class="brand-cluster">
+        <div class="os-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <button class="brand-mark" id="brandHomeBtn" title="العودة إلى الرئيسية">
+          <span id="brandNameEl">باقر محمد</span>
+          <span class="brand-badge" id="brandBadgeEl">PORTFOLIO</span>
+        </button>
+      </div>
+
+      <div class="os-actions">
+        <button class="pill-btn" id="themeToggleBtn" title="تبديل المظهر">
+          <svg class="icon-svg" id="themeIconSvg" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <span id="themeLabel">فاتح</span>
+        </button>
+        <a class="pill-btn primary" id="contactBtnEl" href="https://t.me/baqir_313" target="_blank" rel="noopener">
+          <span id="contactLabelEl">تواصل معي</span>
+          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"></path></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 2. MAIN INTERACTIVE CONTAINER -->
+  <main class="container">
+
+    <!-- HOME VIEW: 3D FROSTED GLASS FOLDERS -->
+    <section id="homeView">
+      <div class="hero-block">
+        <div class="hero-kicker">
+          <span class="kicker-dot"></span>
+          <span id="heroKickerEl">مصمم جرافيك وهويات بصرية • بغداد</span>
+        </div>
+        <h1 class="hero-title">
+          <span id="heroTitleStartEl" style="-webkit-text-fill-color:initial; background:none;">أعمال بصرية مصاغة </span><span id="heroTitleHighlightEl">بدقّة ووضوح</span>
+        </h1>
+        <p class="hero-sub" id="heroSubEl">
+          مختارات من أعمالي في الهويات البصرية، حملات السوشيال ميديا، والمطبوعات لجهات تعليمية وتقنية ومجتمعية.
+        </p>
+      </div>
+
+      <div class="folders-grid" id="foldersGrid"></div>
+    </section>
+
+    <!-- INSIDE FOLDER WORKSPACE VIEW -->
+    <section id="workspaceView" class="workspace-view">
+      <div class="workspace-banner">
+        <div class="ws-meta">
+          <div class="ws-breadcrumb">
+            <button class="pill-btn" id="backToFoldersBtn">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+              <span>العودة للأقسام</span>
+            </button>
+            <span>/</span>
+            <span id="wsTag" style="font-family:var(--font-en); font-weight:700;">CATEGORY</span>
+          </div>
+          <h2 class="ws-title" id="wsTitle"></h2>
+          <p class="ws-desc" id="wsDesc"></p>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+  </main>
+
+  <div class="local-notice" id="localNotice">
+    <div class="local-notice-inner">
+      تم فتح الملف محلياً مباشرة (file://)؛ عند رفعه على Cloudflare Pages أو GitHub Pages أو تشغيله عبر Live Server سيقرأ ملف <strong>data.json</strong> تلقائياً.
+    </div>
+  </div>
+
+  <!-- 3. CAROUSEL LIGHTBOX MODAL -->
+  <div class="modal-backdrop" id="carouselModal" role="dialog" aria-modal="true">
+    <div class="studio-modal">
+      <div class="modal-top">
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <span class="brand-badge" id="modalFolderTag">PROJECT</span>
+          <strong id="modalTitle" style="font-size:1.05rem;"></strong>
+        </div>
+        <button class="pill-btn" id="closeModalBtn">
+          <span>إغلاق</span>
+          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <div class="modal-body-grid">
+        <div>
+          <div class="carousel-stage" id="carouselStage">
+            <img id="carouselMainImg" alt="" />
+            <button class="carousel-nav-btn prev" id="prevSlideBtn" aria-label="السابق">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"></path></svg>
+            </button>
+            <button class="carousel-nav-btn next" id="nextSlideBtn" aria-label="التالي">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"></path></svg>
+            </button>
+            <div class="carousel-caption-bar">
+              <span id="carouselCaption"></span>
+              <span id="carouselCounter" style="font-family:var(--font-en); font-weight:700;"></span>
+            </div>
+          </div>
+
+          <div class="slides-strip" id="slidesStrip"></div>
+        </div>
+
+        <aside class="case-details">
+          <div class="project-tags" id="modalTags"></div>
+          <p id="modalDesc" style="color:var(--text-secondary); line-height:1.75; font-size:0.93rem;"></p>
+          <div class="metric-row" id="modalMetrics"></div>
+
+          <div id="modalLogoControls" style="display:none; padding-top:12px; border-top:1px solid var(--border-subtle);">
+            <div style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:8px;">اختبار أرضية عرض الشعار:</div>
+            <div style="display:flex; gap:8px;">
+              <button class="pill-btn" data-lb-bg="backdrop-dark" style="padding:6px 12px; font-size:0.78rem;">داكن</button>
+              <button class="pill-btn" data-lb-bg="backdrop-light" style="padding:6px 12px; font-size:0.78rem;">أبيض</button>
+              <button class="pill-btn" data-lb-bg="backdrop-checker" style="padding:6px 12px; font-size:0.78rem;">شفاف</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ==========================================================================
+       1. FALLBACK ARTWORK & DATA (Protects against file:// CORS & empty folders)
+       ========================================================================== */
+    function makePlaceholderSvg(title, accent = "#00E5A0") {
+      const safeTitle = String(title || "PREVIEW").slice(0, 26);
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+          <rect width="600" height="450" fill="#0d111a"/>
+          <rect x="28" y="28" width="544" height="394" fill="none" stroke="${accent}" stroke-opacity="0.38" stroke-width="2"/>
+          <circle cx="480" cy="110" r="68" fill="${accent}" fill-opacity="0.14"/>
+          <text x="300" y="232" text-anchor="middle" fill="#f4f6fa" font-family="sans-serif" font-size="28" font-weight="700">${safeTitle}</text>
+          <text x="300" y="268" text-anchor="middle" fill="${accent}" font-family="monospace" font-size="14">BAQIR MOHAMMED PORTFOLIO</text>
+        </svg>`;
+      return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+    }
+
+    function hexToRgbString(hex) {
+      const clean = String(hex || "#00E5A0").replace("#", "");
+      if (clean.length !== 6) return "0, 229, 160";
+      const r = parseInt(clean.slice(0, 2), 16);
+      const g = parseInt(clean.slice(2, 4), 16);
+      const b = parseInt(clean.slice(4, 6), 16);
+      return `${r}, ${g}, ${b}`;
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? "").replace(/[&<>"']/g, m => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[m]));
+    }
+
+    function resolveThumb(slide, fallbackTitle, accent) {
+      return slide?.thumbUrl || slide?.fullUrl || slide?.imageUrl || slide?.src || makePlaceholderSvg(fallbackTitle, accent);
+    }
+
+    function resolveFull(slide, fallbackTitle, accent) {
+      return slide?.fullUrl || slide?.imageUrl || slide?.src || slide?.thumbUrl || makePlaceholderSvg(fallbackTitle, accent);
+    }
+
+    const FALLBACK_DATA = {
+      profile: {
+        brandName: "باقر محمد",
+        brandBadge: "PORTFOLIO",
+        pageTitle: "باقر محمد — معرض الأعمال التصميمية",
+        kicker: "مصمم جرافيك وهويات بصرية • بغداد",
+        heroTitleStart: "أعمال بصرية مصاغة ",
+        heroTitleHighlight: "بدقّة ووضوح",
+        heroSubtitle: "مختارات من أعمالي في الهويات البصرية، حملات السوشيال ميديا، والمطبوعات لجهات تعليمية وتقنية ومجتمعية.",
+        contactLabel: "تواصل معي",
+        contactUrl: "https://t.me/baqir_313"
+      },
+      folders: [
+        { id: "al-qalam", order: 1, tag: "EDUCATION", title: "مركز القلم", subtitle: "حملات تعليمية وقوالب سوشيال ميديا", accent: "#F5B800", projects: [] },
+        { id: "hub-200", order: 2, tag: "CAMPAIGNS", title: "HUB 200", subtitle: "سلاسل كاروسيل ومحتوى تفاعلي", accent: "#00E5A0", projects: [] },
+        { id: "tamayuz", order: 3, tag: "EDITORIAL", title: "كلية التميز", subtitle: "هويات طلابية ومشروع كتاب الكلية", accent: "#1E88FF", projects: [] }
+      ]
+    };
+
+    /* ==========================================================================
+       2. STATE & BOOTSTRAP (Reads data.json + Deep Link Routing)
+       ========================================================================== */
+    let portfolioData = FALLBACK_DATA;
+    let activeFolderId = null;
+    let activeProjectId = null;
+    let activeSlideIndex = 0;
+    let lastOpenedFolderId = null;
+    let savedHomeScrollY = 0;
+    let isTransitioning = false;
+    let mobilePeekObserver = null;
+
+    const foldersGrid = document.getElementById("foldersGrid");
+    const homeView = document.getElementById("homeView");
+    const workspaceView = document.getElementById("workspaceView");
+    const modalBackdrop = document.getElementById("carouselModal");
+
+    async function boot() {
+      try {
+        const res = await fetch("./data.json", { cache: "no-cache" });
+        if (!res.ok) throw new Error("Failed to load data.json");
+        portfolioData = await res.json();
+      } catch (err) {
+        portfolioData = FALLBACK_DATA;
+        if (window.location.protocol === "file:") {
+          document.getElementById("localNotice").style.display = "block";
+        }
+      }
+
+      applyProfile(portfolioData.profile || FALLBACK_DATA.profile);
+      renderFolders();
+      handleInitialHash();
+    }
+
+    function applyProfile(p) {
+      document.title = p.pageTitle || `${p.brandName || "باقر محمد"} — معرض الأعمال`;
+      document.getElementById("brandNameEl").textContent = p.brandName || "باقر محمد";
+      document.getElementById("brandBadgeEl").textContent = p.brandBadge || "PORTFOLIO";
+      document.getElementById("heroKickerEl").textContent = p.kicker || "";
+      document.getElementById("heroTitleStartEl").textContent = p.heroTitleStart || "";
+      document.getElementById("heroTitleHighlightEl").textContent = p.heroTitleHighlight || "";
+      document.getElementById("heroSubEl").textContent = p.heroSubtitle || "";
+      document.getElementById("contactLabelEl").textContent = p.contactLabel || "تواصل معي";
+      const contactBtn = document.getElementById("contactBtnEl");
+      if (p.contactUrl) {
+        contactBtn.href = p.contactUrl;
+        contactBtn.style.display = "inline-flex";
+      } else {
+        contactBtn.style.display = "none";
+      }
+    }
+
+    function getActiveFolder() {
+      return (portfolioData.folders || []).find(f => f.id === activeFolderId);
+    }
+
+    function getActiveProject() {
+      const f = getActiveFolder();
+      return f ? (f.projects || []).find(p => p.id === activeProjectId) : null;
+    }
+
+    /* ==========================================================================
+       3. RENDER 3D FROSTED GLASS FOLDERS (EMPTY-FOLDER SAFE)
+       ========================================================================== */
+    function renderFolders() {
+      foldersGrid.innerHTML = "";
+      const sortedFolders = [...(portfolioData.folders || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+
+      sortedFolders.forEach((folder) => {
+        const accent = folder.accent || "#00E5A0";
+        const accentRgb = folder.accentRgb || hexToRgbString(accent);
+        const sortedProjects = [...(folder.projects || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+
+        // Safe peek covers even if folder has 0, 1, or 2 projects
+        const peekCovers = [];
+        for (let i = 0; i < 3; i++) {
+          if (sortedProjects.length > 0) {
+            const p = sortedProjects[i % sortedProjects.length];
+            const slides = [...(p.slides || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+            peekCovers.push(resolveThumb(slides[0], p.title, accent));
+          } else {
+            peekCovers.push(makePlaceholderSvg(folder.title, accent));
+          }
+        }
+
+        const totalSlides = sortedProjects.reduce((acc, p) => acc + (p.slides?.length || 0), 0);
+        const rimGradId = `rim-${folder.id.replace(/[^a-zA-Z0-9_-]/g, "")}`;
+
+        const card = document.createElement("article");
+        card.className = "folder-card";
+        card.dataset.folderId = folder.id;
+        card.tabIndex = 0;
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-label", `افتح قسم ${folder.title}`);
+        card.style.setProperty("--accent", accent);
+        card.style.setProperty("--accent-rgb", accentRgb);
+
+        card.innerHTML = `
+          <div class="folder-stage">
+            <div class="folder-aura"></div>
+            <div class="folder-backplate"></div>
+
+            <div class="folder-peek-stack">
+              <div class="peek-card p0"><img src="${peekCovers[0]}" alt="" loading="lazy" decoding="async"/></div>
+              <div class="peek-card p1"><img src="${peekCovers[1]}" alt="" loading="lazy" decoding="async"/></div>
+              <div class="peek-card p2"><img src="${peekCovers[2]}" alt="" loading="lazy" decoding="async"/></div>
+            </div>
+
+            <div class="folder-glass-front"></div>
+
+            <svg class="folder-glass-rim" viewBox="-1.5 -1.5 323 233" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="${rimGradId}" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="rgba(255,255,255,0.85)" />
+                  <stop offset="42%" stop-color="${accent}" stop-opacity="0.72" />
+                  <stop offset="100%" stop-color="rgba(255,255,255,0.22)" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M28,0 L108,0 C124,0 130,34 148,34 L292,34 Q320,34 320,62 L320,202 Q320,230 292,230 L28,230 Q0,230 0,202 L0,28 Q0,0 28,0 Z"
+                fill="none"
+                stroke="url(#${rimGradId})"
+                stroke-width="2.2"
+              />
+            </svg>
+
+            <div class="folder-content">
+              <span class="folder-tab-tag">${escapeHtml(folder.tag || "ARCHIVE")}</span>
+              <div class="folder-footer">
+                <div class="folder-title-wrap">
+                  <h3>${escapeHtml(folder.title)}</h3>
+                  <p>${sortedProjects.length} مشاريع • ${totalSlides} شريحة</p>
+                </div>
+                <span class="folder-open-pill">
+                  <span>استعراض</span>
+                  <svg class="icon-svg" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"></path></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // 3D Desktop Mouse Tilt + Parallax
+        card.addEventListener("pointermove", (e) => {
+          if (e.pointerType !== "mouse") return;
+          const rect = card.getBoundingClientRect();
+          const nx = (e.clientX - rect.left) / rect.width - 0.5;
+          const ny = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.setProperty("--ry", `${(nx * 13).toFixed(2)}deg`);
+          card.style.setProperty("--rx", `${(-ny * 10).toFixed(2)}deg`);
+          card.style.setProperty("--px", `${(-nx * 14).toFixed(1)}px`);
+          card.style.setProperty("--py", `${(-ny * 10).toFixed(1)}px`);
+        });
+
+        card.addEventListener("pointerleave", () => {
+          card.style.setProperty("--rx", "0deg");
+          card.style.setProperty("--ry", "0deg");
+          card.style.setProperty("--px", "0px");
+          card.style.setProperty("--py", "0px");
+        });
+
+        const launch = () => openFolderWithAnimation(folder.id, card);
+        card.addEventListener("click", launch);
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); launch(); }
+        });
+
+        foldersGrid.appendChild(card);
+      });
+
+      setupMobileScrollPeek();
+    }
+
+    function setupMobileScrollPeek() {
+      if (mobilePeekObserver) mobilePeekObserver.disconnect();
+      if (!window.matchMedia("(hover: none)").matches) return;
+      mobilePeekObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => entry.target.classList.toggle("is-peeking", entry.isIntersecting));
+      }, { rootMargin: "-25% 0px -25% 0px", threshold: 0.4 });
+      document.querySelectorAll(".folder-card").forEach(el => mobilePeekObserver.observe(el));
+    }
+
+    /* ==========================================================================
+       4. BI-DIRECTIONAL SPATIAL TRANSITIONS (ENTER + SMOOTH REVERSE EXIT)
+       ========================================================================== */
+    function openFolderWithAnimation(folderId, cardEl) {
+      if (isTransitioning) return;
+      isTransitioning = true;
+      savedHomeScrollY = window.scrollY;
+      lastOpenedFolderId = folderId;
+
+      if (cardEl) {
+        cardEl.classList.add("is-launching");
+        foldersGrid.classList.add("is-transitioning");
+      }
+
+      setTimeout(() => {
+        enterFolder(folderId, true);
+        foldersGrid.classList.remove("is-transitioning");
+        if (cardEl) cardEl.classList.remove("is-launching");
+        isTransitioning = false;
+      }, cardEl ? 270 : 0);
+    }
+
+    function enterFolder(folderId, pushHistory = true) {
+      activeFolderId = folderId;
+      lastOpenedFolderId = folderId;
+      const folder = getActiveFolder();
+      if (!folder) return;
+
+      if (pushHistory) {
+        history.pushState({ view: "folder", folderId }, "", `#folder/${folderId}`);
+      }
+
+      homeView.style.display = "none";
+      workspaceView.classList.remove("is-exiting");
+      workspaceView.classList.add("is-visible");
+
+      const accentRgb = folder.accentRgb || hexToRgbString(folder.accent);
+      document.documentElement.style.setProperty("--ws-accent-rgb", accentRgb);
+
+      document.getElementById("wsTag").textContent = folder.tag || "ARCHIVE";
+      document.getElementById("wsTitle").textContent = folder.title;
+      document.getElementById("wsDesc").textContent = folder.subtitle || "";
+
+      renderWorkspaceProjects();
+      window.scrollTo({ top: 0, behavior: "instant" });
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          workspaceView.classList.add("is-active");
+        });
+      });
+    }
+
+    function goHome(pushHistory = true) {
+      if (isTransitioning) return;
+      if (!activeFolderId) return;
+      isTransitioning = true;
+
+      closeCarouselModal(false);
+
+      // Step 1: Animate workspace gliding out smoothly
+      workspaceView.classList.remove("is-active");
+      workspaceView.classList.add("is-exiting");
+
+      setTimeout(() => {
+        activeFolderId = null;
+        workspaceView.classList.remove("is-visible", "is-exiting");
+
+        // Step 2: Prepare Home View in reverse-choreography entry state
+        homeView.classList.add("is-returning");
+        homeView.style.display = "block";
+
+        const focusCard = lastOpenedFolderId
+          ? foldersGrid.querySelector(`[data-folder-id="${CSS.escape(lastOpenedFolderId)}"]`)
+          : null;
+        if (focusCard) focusCard.classList.add("is-returning-focus");
+
+        window.scrollTo({ top: savedHomeScrollY, behavior: "instant" });
+
+        // Step 3: Release into final resting spatial layout smoothly
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            homeView.classList.remove("is-returning");
+            if (focusCard) {
+              setTimeout(() => focusCard.classList.remove("is-returning-focus"), 60);
+            }
+            setTimeout(() => { isTransitioning = false; }, 320);
+          });
+        });
+
+        if (pushHistory) {
+          history.pushState({ view: "home" }, "", "#");
+        }
+      }, 250);
+    }
+
+    function handleInitialHash() {
+      const hash = window.location.hash.replace(/^#/, "");
+      if (!hash.startsWith("folder/")) return;
+      const parts = hash.split("/");
+      const folderId = parts[1];
+      const projectId = parts[2];
+      const folderExists = (portfolioData.folders || []).some(f => f.id === folderId);
+      if (!folderExists) return;
+
+      enterFolder(folderId, false);
+      if (projectId) openCarouselModal(projectId, false);
+    }
+
+    window.addEventListener("popstate", (e) => {
+      const st = e.state;
+      if (!st || st.view === "home") {
+        goHome(false);
+      } else if (st.view === "folder") {
+        closeCarouselModal(false);
+        enterFolder(st.folderId, false);
+      } else if (st.view === "project") {
+        enterFolder(st.folderId, false);
+        openCarouselModal(st.projectId, false);
+      }
+    });
+
+    /* ==========================================================================
+       5. WORKSPACE PROJECTS GRID (UNCROPPED + LOGO BACKDROP SUPPORT)
+       ========================================================================== */
+    function renderWorkspaceProjects() {
+      const folder = getActiveFolder();
+      if (!folder) return;
+
+      const grid = document.getElementById("projectsGrid");
+      grid.innerHTML = "";
+      const projects = [...(folder.projects || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+
+      if (!projects.length) {
+        grid.innerHTML = `
+          <div class="empty-folder-box">
+            <strong>لا توجد أعمال منشورة في هذا القسم حالياً</strong>
+            <p style="margin-top:6px; font-size:0.86rem;">يمكنك إضافة تصاميم هذا القسم في أي وقت عبر لوحة الإدارة.</p>
+          </div>
+        `;
+        return;
+      }
+
+      projects.forEach((proj, idx) => {
+        const slides = [...(proj.slides || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+        const cover = resolveThumb(slides[0], proj.title, folder.accent);
+        const ratioStyle = proj.aspectRatio && proj.aspectRatio !== "auto" ? `aspect-ratio:${proj.aspectRatio};` : "aspect-ratio:4/3;";
+        const fitClass = proj.fitMode === "cover" ? "fit-cover" : "";
+
+        const card = document.createElement("article");
+        card.className = "project-card";
+        card.style.animationDelay = `${idx * 55}ms`;
+
+        card.innerHTML = `
+          <div class="project-thumb-wrap ${fitClass}" style="${ratioStyle}">
+            <img src="${cover}" alt="${escapeHtml(proj.title)}" loading="lazy" decoding="async" />
+            ${slides.length > 1 ? `<span class="carousel-indicator-badge">${slides.length} SLIDES</span>` : ""}
+            ${proj.isLogo ? `
+              <div class="backdrop-switcher" title="تبديل خلفية الشعار">
+                <button class="bg-dot d-dark" data-bg="backdrop-dark" aria-label="داكن"></button>
+                <button class="bg-dot d-light" data-bg="backdrop-light" aria-label="أبيض"></button>
+                <button class="bg-dot d-checker" data-bg="backdrop-checker" aria-label="شفاف"></button>
+              </div>
+            ` : ""}
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              ${proj.category ? `<span class="mini-tag">${escapeHtml(proj.category)}</span>` : ""}
+              ${(proj.tags || []).slice(0, 2).map(t => `<span class="mini-tag">${escapeHtml(t)}</span>`).join("")}
+            </div>
+            <h3 class="project-title">${escapeHtml(proj.title)}</h3>
+            ${proj.description ? `<p class="project-sub">${escapeHtml(proj.description)}</p>` : ""}
+          </div>
+        `;
+
+        card.querySelectorAll("[data-bg]").forEach(btn => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const wrap = card.querySelector(".project-thumb-wrap");
+            wrap.classList.remove("backdrop-dark", "backdrop-light", "backdrop-checker");
+            wrap.classList.add(btn.dataset.bg);
+          });
+        });
+
+        const open = () => openCarouselModal(proj.id, true);
+        card.querySelector(".project-thumb-wrap").addEventListener("click", open);
+        card.querySelector(".project-title").addEventListener("click", open);
+
+        grid.appendChild(card);
+      });
+    }
+
+    /* ==========================================================================
+       6. FULL-RES CAROUSEL LIGHTBOX (ON-DEMAND FULL URL LOADING)
+       ========================================================================== */
+    let touchStartX = 0;
+
+    function openCarouselModal(projectId, pushHistory = true) {
+      activeProjectId = projectId;
+      activeSlideIndex = 0;
+      const folder = getActiveFolder();
+      const proj = getActiveProject();
+      if (!proj) return;
+
+      if (pushHistory) {
+        history.pushState({ view: "project", folderId: folder.id, projectId }, "", `#folder/${folder.id}/${projectId}`);
+      }
+
+      document.getElementById("modalFolderTag").textContent = folder.tag || "PROJECT";
+      document.getElementById("modalTitle").textContent = proj.title;
+      document.getElementById("modalDesc").textContent = proj.description || "";
+      document.getElementById("modalTags").innerHTML = (proj.tags || []).map(t => `<span class="mini-tag">${escapeHtml(t)}</span>`).join("");
+      document.getElementById("modalMetrics").innerHTML = (proj.metrics || [])
+        .map(m => `<div class="metric-box"><div class="metric-val">${escapeHtml(m.val)}</div><div class="metric-lbl">${escapeHtml(m.lbl)}</div></div>`)
+        .join("");
+
+      const stage = document.getElementById("carouselStage");
+      stage.classList.remove("backdrop-dark", "backdrop-light", "backdrop-checker");
+      document.getElementById("modalLogoControls").style.display = proj.isLogo ? "block" : "none";
+
+      renderCarouselView();
+
+      modalBackdrop.classList.add("is-visible");
+      document.body.style.overflow = "hidden";
+      requestAnimationFrame(() => modalBackdrop.classList.add("is-open"));
+    }
+
+    function closeCarouselModal(updateHistory = true) {
+      if (!modalBackdrop.classList.contains("is-visible")) return;
+      modalBackdrop.classList.remove("is-open");
+      document.body.style.overflow = "";
+      setTimeout(() => {
+        modalBackdrop.classList.remove("is-visible");
+        activeProjectId = null;
+      }, 220);
+
+      if (updateHistory && activeFolderId) {
+        history.pushState({ view: "folder", folderId: activeFolderId }, "", `#folder/${activeFolderId}`);
+      }
+    }
+
+    function renderCarouselView() {
+      const folder = getActiveFolder();
+      const proj = getActiveProject();
+      if (!proj) return;
+
+      const slides = [...(proj.slides || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+      if (!slides.length) return;
+      if (activeSlideIndex >= slides.length) activeSlideIndex = 0;
+
+      const currentSlide = slides[activeSlideIndex];
+      const mainImg = document.getElementById("carouselMainImg");
+      mainImg.style.opacity = "0.25";
+      mainImg.onload = () => { mainImg.style.opacity = "1"; };
+      mainImg.src = resolveFull(currentSlide, proj.title, folder.accent);
+      mainImg.alt = currentSlide.caption || proj.title;
+
+      document.getElementById("carouselCaption").textContent = currentSlide.caption || proj.title;
+      document.getElementById("carouselCounter").textContent = `${String(activeSlideIndex + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+
+      document.getElementById("prevSlideBtn").style.display = slides.length > 1 ? "flex" : "none";
+      document.getElementById("nextSlideBtn").style.display = slides.length > 1 ? "flex" : "none";
+
+      const strip = document.getElementById("slidesStrip");
+      strip.innerHTML = "";
+      if (slides.length <= 1) return;
+
+      slides.forEach((slide, idx) => {
+        const item = document.createElement("div");
+        item.className = `slide-thumb ${idx === activeSlideIndex ? "is-current" : ""}`;
+        item.innerHTML = `
+          <img src="${resolveThumb(slide, proj.title, folder.accent)}" alt="" loading="lazy" />
+          <span class="slide-num-pill">${String(idx + 1).padStart(2, "0")}</span>
+        `;
+        item.addEventListener("click", () => {
+          activeSlideIndex = idx;
+          renderCarouselView();
+        });
+        strip.appendChild(item);
+      });
+    }
+
+    function stepSlide(delta) {
+      const proj = getActiveProject();
+      if (!proj || !proj.slides?.length) return;
+      activeSlideIndex = (activeSlideIndex + delta + proj.slides.length) % proj.slides.length;
+      renderCarouselView();
+    }
+
+    /* ==========================================================================
+       7. GLOBAL CONTROLS & EVENTS
+       ========================================================================== */
+    document.getElementById("brandHomeBtn").addEventListener("click", () => goHome(true));
+    document.getElementById("backToFoldersBtn").addEventListener("click", () => goHome(true));
+    document.getElementById("closeModalBtn").addEventListener("click", () => closeCarouselModal(true));
+    modalBackdrop.addEventListener("click", (e) => { if (e.target === modalBackdrop) closeCarouselModal(true); });
+
+    document.getElementById("prevSlideBtn").addEventListener("click", () => stepSlide(-1));
+    document.getElementById("nextSlideBtn").addEventListener("click", () => stepSlide(1));
+
+    document.querySelectorAll("[data-lb-bg]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const stage = document.getElementById("carouselStage");
+        stage.classList.remove("backdrop-dark", "backdrop-light", "backdrop-checker");
+        stage.classList.add(btn.dataset.lbBg);
+      });
+    });
+
+    const stageEl = document.getElementById("carouselStage");
+    stageEl.addEventListener("touchstart", e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+    stageEl.addEventListener("touchend", e => {
+      const diff = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(diff) > 45) stepSlide(diff > 0 ? -1 : 1);
+    }, { passive: true });
+
+    window.addEventListener("keydown", (e) => {
+      if (!modalBackdrop.classList.contains("is-visible")) return;
+      if (e.key === "Escape") closeCarouselModal(true);
+      if (e.key === "ArrowLeft") stepSlide(1);
+      if (e.key === "ArrowRight") stepSlide(-1);
+    });
+
+    document.getElementById("themeToggleBtn").addEventListener("click", () => {
+      const root = document.documentElement;
+      const isDark = root.getAttribute("data-theme") === "dark";
+      const next = isDark ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      document.getElementById("themeLabel").textContent = next === "dark" ? "فاتح" : "داكن";
+    });
+
+    boot();
+  </script>
+</body>
+</html>
