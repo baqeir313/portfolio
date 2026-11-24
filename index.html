@@ -66,7 +66,7 @@
     .icon-svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 
     /* ==========================================================================
-       2. OS-STYLE EDITORIAL TOP BAR (CLEAN VISITOR INTERFACE)
+       2. OS-STYLE EDITORIAL TOP BAR
        ========================================================================== */
     .os-header {
       position: sticky;
@@ -242,23 +242,11 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    .folder-card.is-launching {
-      transform: scale(1.07) translateY(-12px);
-      z-index: 20;
-    }
+    .folder-card.is-launching { transform: scale(1.07) translateY(-12px); z-index: 20; }
+    .folder-card.is-returning-focus { transform: scale(1.055) translateY(-10px); z-index: 15; }
 
-    .folder-card.is-returning-focus {
-      transform: scale(1.055) translateY(-10px);
-      z-index: 15;
-    }
+    .folder-stage { position: relative; width: 100%; aspect-ratio: 320 / 230; }
 
-    .folder-stage {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 320 / 230;
-    }
-
-    /* Layer 0: Adaptive Ambient Glow */
     .folder-aura {
       position: absolute;
       inset: 14% 8% -12% 8%;
@@ -271,12 +259,8 @@
       pointer-events: none;
     }
     .folder-card:hover .folder-aura,
-    .folder-card.is-peeking .folder-aura {
-      opacity: 0.95;
-      transform: scale(1.08);
-    }
+    .folder-card.is-peeking .folder-aura { opacity: 0.95; transform: scale(1.08); }
 
-    /* Layer 1: Folder Backplate */
     .folder-backplate {
       position: absolute;
       inset: -14px 4px 8px 4px;
@@ -295,7 +279,6 @@
       mask-size: 100% 100%;
     }
 
-    /* Layer 2: Physical Artwork Cards tucked inside */
     .folder-peek-stack {
       position: absolute;
       inset: -44px 16px 26px 16px;
@@ -329,7 +312,6 @@
     .folder-card:hover .peek-card.p2,
     .folder-card.is-peeking .peek-card.p2 { transform: rotate(15deg) translate(8px, -20px) scale(1.04); }
 
-    /* Layer 3: Frosted Acrylic Glass Front */
     .folder-glass-front {
       position: absolute;
       inset: 0;
@@ -359,7 +341,6 @@
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
-    /* Layer 4: Luminous Specular Glass Edge Rim */
     .folder-glass-rim {
       position: absolute;
       inset: 0;
@@ -371,7 +352,6 @@
       transform-origin: bottom center;
     }
 
-    /* Layer 5: Front Metadata */
     .folder-content {
       position: absolute;
       inset: 0;
@@ -387,9 +367,7 @@
 
     .folder-card:hover .folder-glass-front,
     .folder-card:hover .folder-glass-rim,
-    .folder-card:hover .folder-content {
-      transform: translateY(3px) scaleY(0.985);
-    }
+    .folder-card:hover .folder-content { transform: translateY(3px) scaleY(0.985); }
 
     .folder-tab-tag {
       align-self: flex-end;
@@ -406,25 +384,9 @@
       margin-right: 0;
     }
 
-    .folder-footer {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .folder-title-wrap h3 {
-      font-size: 1.18rem;
-      font-weight: 700;
-      color: #ffffff;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
-      margin-bottom: 3px;
-    }
-    .folder-title-wrap p {
-      font-size: 0.78rem;
-      color: rgba(255, 255, 255, 0.84);
-      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
-    }
+    .folder-footer { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; }
+    .folder-title-wrap h3 { font-size: 1.18rem; font-weight: 700; color: #ffffff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45); margin-bottom: 3px; }
+    .folder-title-wrap p { font-size: 0.78rem; color: rgba(255, 255, 255, 0.84); text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4); }
 
     .folder-open-pill {
       flex-shrink: 0;
@@ -450,7 +412,7 @@
     }
 
     /* ==========================================================================
-       5. INSIDE FOLDER WORKSPACE VIEW (SMOOTH ENTER & EXIT CHOREOGRAPHY)
+       5. INSIDE FOLDER WORKSPACE VIEW (ADAPTIVE ZERO-CROP CARDS)
        ========================================================================== */
     .workspace-view {
       display: none;
@@ -460,17 +422,8 @@
       transition: opacity 0.36s var(--ease-spring), transform 0.42s var(--ease-spring), filter 0.32s ease;
     }
     .workspace-view.is-visible { display: block; }
-    .workspace-view.is-active {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-      filter: blur(0px);
-    }
-    .workspace-view.is-exiting {
-      opacity: 0;
-      transform: translateY(22px) scale(0.955);
-      filter: blur(8px);
-      pointer-events: none;
-    }
+    .workspace-view.is-active { opacity: 1; transform: translateY(0) scale(1); filter: blur(0px); }
+    .workspace-view.is-exiting { opacity: 0; transform: translateY(22px) scale(0.955); filter: blur(8px); pointer-events: none; }
 
     .workspace-banner {
       position: relative;
@@ -498,18 +451,10 @@
     }
 
     .ws-meta { position: relative; z-index: 1; }
-    .ws-breadcrumb {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-      font-size: 0.84rem;
-      color: var(--text-secondary);
-    }
+    .ws-breadcrumb { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 0.84rem; color: var(--text-secondary); }
     .ws-title { font-size: clamp(1.5rem, 3.2vw, 2.2rem); font-weight: 700; margin-bottom: 6px; }
     .ws-desc { color: var(--text-secondary); font-size: 0.94rem; }
 
-    /* Projects Grid (Uncropped Neutral Stage) */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -540,6 +485,7 @@
       box-shadow: 0 20px 42px -16px rgba(0, 0, 0, 0.42);
     }
 
+    /* Adaptive Stage: Hugs artwork natural proportions cleanly without cropping */
     .project-thumb-wrap {
       position: relative;
       background: var(--bg-stage);
@@ -548,11 +494,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 14px;
       border-bottom: 1px solid var(--border-subtle);
+      width: 100%;
     }
 
-    .project-thumb-wrap.fit-cover { padding: 0; }
+    .project-thumb-wrap.is-logo-pad { padding: 20px; }
     .project-thumb-wrap.backdrop-dark { background: #0c0e13 !important; }
     .project-thumb-wrap.backdrop-light { background: #f8f9fa !important; }
     .project-thumb-wrap.backdrop-checker {
@@ -574,7 +520,7 @@
       transition: transform 0.55s var(--ease-spring);
     }
     .project-thumb-wrap.fit-cover img { object-fit: cover; }
-    .project-card:hover .project-thumb-wrap img { transform: scale(1.025); }
+    .project-card:hover .project-thumb-wrap img { transform: scale(1.022); }
 
     .carousel-indicator-badge {
       position: absolute;
@@ -606,21 +552,12 @@
       border: 1px solid rgba(255, 255, 255, 0.2);
       z-index: 4;
     }
-    .bg-dot {
-      width: 14px; height: 14px; border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.45);
-    }
+    .bg-dot { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.45); }
     .bg-dot.d-dark { background: #0c0e13; }
     .bg-dot.d-light { background: #f8f9fa; }
     .bg-dot.d-checker { background: repeating-conic-gradient(#94a3b8 0% 25%, #e2e8f0 0% 50%) 50% / 7px 7px; }
 
-    .project-body {
-      padding: 16px 18px 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex: 1;
-    }
+    .project-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
     .project-tags { display: flex; gap: 6px; flex-wrap: wrap; }
     .mini-tag {
       font-size: 0.72rem;
@@ -645,19 +582,19 @@
     }
 
     /* ==========================================================================
-       6. CAROUSEL LIGHTBOX MODAL (ZERO-CROP FULL RESOLUTION VIEWER)
+       6. ADAPTIVE FULL-SIZE LIGHTBOX (PERFECT FOR STORIES, PORTRAITS & WIDES)
        ========================================================================== */
     .modal-backdrop {
       position: fixed;
       inset: 0;
       z-index: 100;
-      background: rgba(5, 7, 11, 0.86);
+      background: rgba(5, 7, 11, 0.88);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       display: none;
       align-items: center;
       justify-content: center;
-      padding: 18px;
+      padding: 14px;
       opacity: 0;
       transition: opacity 0.24s ease;
     }
@@ -666,10 +603,10 @@
 
     .studio-modal {
       width: 100%;
-      max-width: 1120px;
-      max-height: 92vh;
+      max-width: 1180px;
+      max-height: 94vh;
       overflow-y: auto;
-      border-radius: 24px;
+      border-radius: 22px;
       background: var(--bg-surface);
       border: 1px solid var(--border-strong);
       box-shadow: 0 36px 80px rgba(0, 0, 0, 0.75);
@@ -685,31 +622,36 @@
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-      padding: 16px 22px;
+      padding: 14px 20px;
       border-bottom: 1px solid var(--border-subtle);
       flex-wrap: wrap;
     }
 
     .modal-body-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
-      gap: 24px;
-      padding: 22px;
+      grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.68fr);
+      gap: 22px;
+      padding: 18px 20px 22px;
+      align-items: start;
     }
-    @media (max-width: 840px) { .modal-body-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 860px) { .modal-body-grid { grid-template-columns: 1fr; } }
+
+    .carousel-stage-container {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-stage);
+    }
 
     .carousel-stage {
       position: relative;
-      border-radius: 18px;
-      overflow: hidden;
-      min-height: 360px;
-      max-height: 66vh;
+      min-height: 300px;
+      max-height: 76vh;
       background: var(--bg-stage);
-      border: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 16px;
+      padding: 12px;
       touch-action: pan-y;
     }
     .carousel-stage.backdrop-dark { background: #0c0e13 !important; }
@@ -727,11 +669,12 @@
 
     .carousel-stage img {
       max-width: 100%;
-      max-height: calc(66vh - 64px);
+      max-height: 72vh;
       width: auto;
       height: auto;
       object-fit: contain;
       display: block;
+      border-radius: 8px;
       transition: opacity 0.22s ease;
     }
 
@@ -752,26 +695,24 @@
     .carousel-nav-btn.prev { right: 12px; }
     .carousel-nav-btn.next { left: 12px; }
 
+    /* Dedicated Caption Strip BELOW image — never covers artwork */
     .carousel-caption-bar {
-      position: absolute;
-      inset: auto 12px 12px 12px;
-      padding: 8px 14px;
-      border-radius: 12px;
-      background: rgba(9, 11, 15, 0.8);
-      backdrop-filter: blur(10px);
-      color: #fff;
+      padding: 10px 16px;
+      background: var(--bg-elevated);
+      border-top: 1px solid var(--border-subtle);
+      color: var(--text-primary);
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      font-size: 0.82rem;
+      font-size: 0.83rem;
     }
 
     .slides-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
-      gap: 10px;
-      margin-top: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+      gap: 9px;
+      margin-top: 12px;
     }
 
     .slide-thumb {
@@ -781,7 +722,7 @@
       border: 2px solid transparent;
       background: var(--bg-stage);
       cursor: pointer;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 1 / 1;
       transition: transform 0.2s, border-color 0.2s;
     }
     .slide-thumb.is-current { border-color: #00e5a0; }
@@ -811,12 +752,7 @@
     .metric-val { font-family: var(--font-en); font-size: 1.2rem; font-weight: 700; }
     .metric-lbl { font-size: 0.74rem; color: var(--text-secondary); }
 
-    .local-notice {
-      max-width: 1240px;
-      margin: 0 auto 24px;
-      padding: 0 20px;
-      display: none;
-    }
+    .local-notice { max-width: 1240px; margin: 0 auto 24px; padding: 0 20px; display: none; }
     .local-notice-inner {
       padding: 10px 16px;
       border-radius: 12px;
@@ -909,11 +845,11 @@
 
   <div class="local-notice" id="localNotice">
     <div class="local-notice-inner">
-      تم فتح الملف محلياً مباشرة (file://)؛ عند رفعه على Cloudflare Pages أو GitHub Pages أو تشغيله عبر Live Server سيقرأ ملف <strong>data.json</strong> تلقائياً.
+      تم فتح الملف محلياً مباشرة (file://)؛ عند رفعه على GitHub Pages أو Cloudflare Pages سيقرأ ملف <strong>data.json</strong> تلقائياً.
     </div>
   </div>
 
-  <!-- 3. CAROUSEL LIGHTBOX MODAL -->
+  <!-- 3. ADAPTIVE FULL-SIZE LIGHTBOX MODAL -->
   <div class="modal-backdrop" id="carouselModal" role="dialog" aria-modal="true">
     <div class="studio-modal">
       <div class="modal-top">
@@ -929,17 +865,19 @@
 
       <div class="modal-body-grid">
         <div>
-          <div class="carousel-stage" id="carouselStage">
-            <img id="carouselMainImg" alt="" />
-            <button class="carousel-nav-btn prev" id="prevSlideBtn" aria-label="السابق">
-              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"></path></svg>
-            </button>
-            <button class="carousel-nav-btn next" id="nextSlideBtn" aria-label="التالي">
-              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"></path></svg>
-            </button>
+          <div class="carousel-stage-container">
+            <div class="carousel-stage" id="carouselStage">
+              <img id="carouselMainImg" alt="" />
+              <button class="carousel-nav-btn prev" id="prevSlideBtn" aria-label="السابق">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"></path></svg>
+              </button>
+              <button class="carousel-nav-btn next" id="nextSlideBtn" aria-label="التالي">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"></path></svg>
+              </button>
+            </div>
             <div class="carousel-caption-bar">
               <span id="carouselCaption"></span>
-              <span id="carouselCounter" style="font-family:var(--font-en); font-weight:700;"></span>
+              <span id="carouselCounter" style="font-family:var(--font-en); font-weight:700; white-space:nowrap;"></span>
             </div>
           </div>
 
@@ -966,7 +904,7 @@
 
   <script>
     /* ==========================================================================
-       1. FALLBACK ARTWORK & DATA (Protects against file:// CORS & empty folders)
+       1. UTILITIES & FALLBACK ARTWORK
        ========================================================================== */
     function makePlaceholderSvg(title, accent = "#00E5A0") {
       const safeTitle = String(title || "PREVIEW").slice(0, 26);
@@ -984,16 +922,19 @@
     function hexToRgbString(hex) {
       const clean = String(hex || "#00E5A0").replace("#", "");
       if (clean.length !== 6) return "0, 229, 160";
-      const r = parseInt(clean.slice(0, 2), 16);
-      const g = parseInt(clean.slice(2, 4), 16);
-      const b = parseInt(clean.slice(4, 6), 16);
-      return `${r}, ${g}, ${b}`;
+      return `${parseInt(clean.slice(0, 2), 16)}, ${parseInt(clean.slice(2, 4), 16)}, ${parseInt(clean.slice(4, 6), 16)}`;
     }
 
     function escapeHtml(str) {
       return String(str ?? "").replace(/[&<>"']/g, m => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
       }[m]));
+    }
+
+    function clampRatio(w, h) {
+      if (!w || !h) return 4 / 3;
+      const raw = w / h;
+      return Math.max(0.5625, Math.min(1.85, raw)); // Supports 9:16 story up to wide landscape gracefully
     }
 
     function resolveThumb(slide, fallbackTitle, accent) {
@@ -1016,15 +957,11 @@
         contactLabel: "تواصل معي",
         contactUrl: "https://t.me/baqir_313"
       },
-      folders: [
-        { id: "al-qalam", order: 1, tag: "EDUCATION", title: "مركز القلم", subtitle: "حملات تعليمية وقوالب سوشيال ميديا", accent: "#F5B800", projects: [] },
-        { id: "hub-200", order: 2, tag: "CAMPAIGNS", title: "HUB 200", subtitle: "سلاسل كاروسيل ومحتوى تفاعلي", accent: "#00E5A0", projects: [] },
-        { id: "tamayuz", order: 3, tag: "EDITORIAL", title: "كلية التميز", subtitle: "هويات طلابية ومشروع كتاب الكلية", accent: "#1E88FF", projects: [] }
-      ]
+      folders: []
     };
 
     /* ==========================================================================
-       2. STATE & BOOTSTRAP (Reads data.json + Deep Link Routing)
+       2. STATE & BOOTSTRAP
        ========================================================================== */
     let portfolioData = FALLBACK_DATA;
     let activeFolderId = null;
@@ -1042,7 +979,7 @@
 
     async function boot() {
       try {
-        const res = await fetch("./data.json", { cache: "no-cache" });
+        const res = await fetch(`./data.json?_ts=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) throw new Error("Failed to load data.json");
         portfolioData = await res.json();
       } catch (err) {
@@ -1085,7 +1022,7 @@
     }
 
     /* ==========================================================================
-       3. RENDER 3D FROSTED GLASS FOLDERS (EMPTY-FOLDER SAFE)
+       3. RENDER 3D FROSTED GLASS FOLDERS
        ========================================================================== */
     function renderFolders() {
       foldersGrid.innerHTML = "";
@@ -1096,7 +1033,6 @@
         const accentRgb = folder.accentRgb || hexToRgbString(accent);
         const sortedProjects = [...(folder.projects || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
 
-        // Safe peek covers even if folder has 0, 1, or 2 projects
         const peekCovers = [];
         for (let i = 0; i < 3; i++) {
           if (sortedProjects.length > 0) {
@@ -1165,7 +1101,6 @@
           </div>
         `;
 
-        // 3D Desktop Mouse Tilt + Parallax
         card.addEventListener("pointermove", (e) => {
           if (e.pointerType !== "mouse") return;
           const rect = card.getBoundingClientRect();
@@ -1206,7 +1141,7 @@
     }
 
     /* ==========================================================================
-       4. BI-DIRECTIONAL SPATIAL TRANSITIONS (ENTER + SMOOTH REVERSE EXIT)
+       4. BI-DIRECTIONAL SPATIAL TRANSITIONS
        ========================================================================== */
     function openFolderWithAnimation(folderId, cardEl) {
       if (isTransitioning) return;
@@ -1252,20 +1187,15 @@
       window.scrollTo({ top: 0, behavior: "instant" });
 
       requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          workspaceView.classList.add("is-active");
-        });
+        requestAnimationFrame(() => workspaceView.classList.add("is-active"));
       });
     }
 
     function goHome(pushHistory = true) {
-      if (isTransitioning) return;
-      if (!activeFolderId) return;
+      if (isTransitioning || !activeFolderId) return;
       isTransitioning = true;
 
       closeCarouselModal(false);
-
-      // Step 1: Animate workspace gliding out smoothly
       workspaceView.classList.remove("is-active");
       workspaceView.classList.add("is-exiting");
 
@@ -1273,7 +1203,6 @@
         activeFolderId = null;
         workspaceView.classList.remove("is-visible", "is-exiting");
 
-        // Step 2: Prepare Home View in reverse-choreography entry state
         homeView.classList.add("is-returning");
         homeView.style.display = "block";
 
@@ -1284,20 +1213,15 @@
 
         window.scrollTo({ top: savedHomeScrollY, behavior: "instant" });
 
-        // Step 3: Release into final resting spatial layout smoothly
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
             homeView.classList.remove("is-returning");
-            if (focusCard) {
-              setTimeout(() => focusCard.classList.remove("is-returning-focus"), 60);
-            }
+            if (focusCard) setTimeout(() => focusCard.classList.remove("is-returning-focus"), 60);
             setTimeout(() => { isTransitioning = false; }, 320);
           });
         });
 
-        if (pushHistory) {
-          history.pushState({ view: "home" }, "", "#");
-        }
+        if (pushHistory) history.pushState({ view: "home" }, "", "#");
       }, 250);
     }
 
@@ -1307,8 +1231,7 @@
       const parts = hash.split("/");
       const folderId = parts[1];
       const projectId = parts[2];
-      const folderExists = (portfolioData.folders || []).some(f => f.id === folderId);
-      if (!folderExists) return;
+      if (!(portfolioData.folders || []).some(f => f.id === folderId)) return;
 
       enterFolder(folderId, false);
       if (projectId) openCarouselModal(projectId, false);
@@ -1316,19 +1239,13 @@
 
     window.addEventListener("popstate", (e) => {
       const st = e.state;
-      if (!st || st.view === "home") {
-        goHome(false);
-      } else if (st.view === "folder") {
-        closeCarouselModal(false);
-        enterFolder(st.folderId, false);
-      } else if (st.view === "project") {
-        enterFolder(st.folderId, false);
-        openCarouselModal(st.projectId, false);
-      }
+      if (!st || st.view === "home") goHome(false);
+      else if (st.view === "folder") { closeCarouselModal(false); enterFolder(st.folderId, false); }
+      else if (st.view === "project") { enterFolder(st.folderId, false); openCarouselModal(st.projectId, false); }
     });
 
     /* ==========================================================================
-       5. WORKSPACE PROJECTS GRID (UNCROPPED + LOGO BACKDROP SUPPORT)
+       5. WORKSPACE PROJECTS GRID (AUTO-RATIO DETECTION + ZERO CROP)
        ========================================================================== */
     function renderWorkspaceProjects() {
       const folder = getActiveFolder();
@@ -1350,16 +1267,31 @@
 
       projects.forEach((proj, idx) => {
         const slides = [...(proj.slides || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
-        const cover = resolveThumb(slides[0], proj.title, folder.accent);
-        const ratioStyle = proj.aspectRatio && proj.aspectRatio !== "auto" ? `aspect-ratio:${proj.aspectRatio};` : "aspect-ratio:4/3;";
+        const firstSlide = slides[0];
+        const cover = resolveThumb(firstSlide, proj.title, folder.accent);
+
+        const isAuto = !proj.aspectRatio || proj.aspectRatio === "auto";
+        let initialRatio = "4/3";
+        if (proj.isLogo) {
+          initialRatio = "4/3";
+        } else if (!isAuto) {
+          initialRatio = proj.aspectRatio;
+        } else if (firstSlide?.w && firstSlide?.h) {
+          initialRatio = String(clampRatio(firstSlide.w, firstSlide.h));
+        } else if (proj.naturalRatio) {
+          const [nw, nh] = proj.naturalRatio.split("/").map(Number);
+          if (nw && nh) initialRatio = String(clampRatio(nw, nh));
+        }
+
         const fitClass = proj.fitMode === "cover" ? "fit-cover" : "";
+        const logoPadClass = proj.isLogo ? "is-logo-pad" : "";
 
         const card = document.createElement("article");
         card.className = "project-card";
         card.style.animationDelay = `${idx * 55}ms`;
 
         card.innerHTML = `
-          <div class="project-thumb-wrap ${fitClass}" style="${ratioStyle}">
+          <div class="project-thumb-wrap ${fitClass} ${logoPadClass}" style="aspect-ratio:${initialRatio};">
             <img src="${cover}" alt="${escapeHtml(proj.title)}" loading="lazy" decoding="async" />
             ${slides.length > 1 ? `<span class="carousel-indicator-badge">${slides.length} SLIDES</span>` : ""}
             ${proj.isLogo ? `
@@ -1380,17 +1312,27 @@
           </div>
         `;
 
+        // Dynamic auto-sizing fallback for images without stored dimensions
+        const wrapEl = card.querySelector(".project-thumb-wrap");
+        const imgEl = wrapEl.querySelector("img");
+        if (isAuto && !proj.isLogo) {
+          imgEl.addEventListener("load", () => {
+            if (imgEl.naturalWidth && imgEl.naturalHeight) {
+              wrapEl.style.aspectRatio = String(clampRatio(imgEl.naturalWidth, imgEl.naturalHeight));
+            }
+          });
+        }
+
         card.querySelectorAll("[data-bg]").forEach(btn => {
           btn.addEventListener("click", (e) => {
             e.stopPropagation();
-            const wrap = card.querySelector(".project-thumb-wrap");
-            wrap.classList.remove("backdrop-dark", "backdrop-light", "backdrop-checker");
-            wrap.classList.add(btn.dataset.bg);
+            wrapEl.classList.remove("backdrop-dark", "backdrop-light", "backdrop-checker");
+            wrapEl.classList.add(btn.dataset.bg);
           });
         });
 
         const open = () => openCarouselModal(proj.id, true);
-        card.querySelector(".project-thumb-wrap").addEventListener("click", open);
+        wrapEl.addEventListener("click", open);
         card.querySelector(".project-title").addEventListener("click", open);
 
         grid.appendChild(card);
@@ -1398,7 +1340,7 @@
     }
 
     /* ==========================================================================
-       6. FULL-RES CAROUSEL LIGHTBOX (ON-DEMAND FULL URL LOADING)
+       6. ADAPTIVE FULL-SIZE LIGHTBOX VIEWER
        ========================================================================== */
     let touchStartX = 0;
 
