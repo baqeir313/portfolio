@@ -21,8 +21,144 @@
       "accentRgb": "0, 110, 255",
       "projects": [
         {
-          "id": "proj-1795516697344",
+          "id": "proj-1795516836818",
           "order": 1,
+          "fileName": "project_03",
+          "title": "كاروسيل «شنو تكدر تسوي بكلية التميز؟»",
+          "category": "",
+          "aspectRatio": "4/5",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [],
+          "description": "سلسلة كاروسيل تعريفية شاملة تستعرض الحياة الجامعية والأنشطة الطلابية داخل كلية التميز (مثل الهاكثونات والفعاليات الرياضية ككرة السلة) لجذب الطلبة الجدد وإبراز تميز البيئة الطلابية. ارتكز التنفيذ البصري على غلاف جذاب (Hook) بأسلوب تفاعلي مع توحيد الهوية الزرقاء للكلية عبر جميع الشرائح لضمان انسيابية القراءة.",
+          "metrics": [
+            {
+              "val": "14",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795516757610_nmnp",
+              "order": 1,
+              "fileName": "هوك---3.png",
+              "caption": "هوك 3",
+              "thumbUrl": "assets/thumbs/img_1795516757610_nmnp.webp",
+              "fullUrl": "assets/full/img_1795516757610_nmnp.webp"
+            },
+            {
+              "id": "s-1795516774156_tc27",
+              "order": 2,
+              "fileName": "صورة-1---كرة-قدم.png",
+              "caption": "صورة 1 كرة قدم",
+              "thumbUrl": "assets/thumbs/img_1795516774156_tc27.webp",
+              "fullUrl": "assets/full/img_1795516774156_tc27.webp"
+            },
+            {
+              "id": "s-1795516774523_n6dn",
+              "order": 3,
+              "fileName": "صورة-2---بوسترات.png",
+              "caption": "صورة 2 بوسترات",
+              "thumbUrl": "assets/thumbs/img_1795516774523_n6dn.webp",
+              "fullUrl": "assets/full/img_1795516774523_n6dn.webp"
+            },
+            {
+              "id": "s-1795516774925_5pgj",
+              "order": 4,
+              "fileName": "صورة-3---كرة-سلة.png",
+              "caption": "صورة 3 كرة سلة",
+              "thumbUrl": "assets/thumbs/img_1795516774925_5pgj.webp",
+              "fullUrl": "assets/full/img_1795516774925_5pgj.webp"
+            },
+            {
+              "id": "s-1795516775378_wlen",
+              "order": 5,
+              "fileName": "صورة-4---مسابقة-عربي.png",
+              "caption": "صورة 4 مسابقة عربي",
+              "thumbUrl": "assets/thumbs/img_1795516775378_wlen.webp",
+              "fullUrl": "assets/full/img_1795516775378_wlen.webp"
+            },
+            {
+              "id": "s-1795516775587_sp7g",
+              "order": 6,
+              "fileName": "صورة-5---تنس.png",
+              "caption": "صورة 5 تنس",
+              "thumbUrl": "assets/thumbs/img_1795516775587_sp7g.webp",
+              "fullUrl": "assets/full/img_1795516775587_sp7g.webp"
+            },
+            {
+              "id": "s-1795516775983_tjfn",
+              "order": 7,
+              "fileName": "صورة-6---هاكثون.png",
+              "caption": "صورة 6 هاكثون",
+              "thumbUrl": "assets/thumbs/img_1795516775983_tjfn.webp",
+              "fullUrl": "assets/full/img_1795516775983_tjfn.webp"
+            },
+            {
+              "id": "s-1795516776371_jv7h",
+              "order": 8,
+              "fileName": "صورة-7---رسم.png",
+              "caption": "صورة 7 رسم",
+              "thumbUrl": "assets/thumbs/img_1795516776371_jv7h.webp",
+              "fullUrl": "assets/full/img_1795516776371_jv7h.webp"
+            },
+            {
+              "id": "s-1795516776593_4hlx",
+              "order": 9,
+              "fileName": "صورة-8---ورشة.png",
+              "caption": "صورة 8 ورشة",
+              "thumbUrl": "assets/thumbs/img_1795516776593_4hlx.webp",
+              "fullUrl": "assets/full/img_1795516776593_4hlx.webp"
+            },
+            {
+              "id": "s-1795516776801_6dbm",
+              "order": 10,
+              "fileName": "صورة-9---برزنتيشن.png",
+              "caption": "صورة 9 برزنتيشن",
+              "thumbUrl": "assets/thumbs/img_1795516776801_6dbm.webp",
+              "fullUrl": "assets/full/img_1795516776801_6dbm.webp"
+            },
+            {
+              "id": "s-1795516777034_kmfb",
+              "order": 11,
+              "fileName": "صورة-10---شطرنج.png",
+              "caption": "صورة 10 شطرنج",
+              "thumbUrl": "assets/thumbs/img_1795516777034_kmfb.webp",
+              "fullUrl": "assets/full/img_1795516777034_kmfb.webp"
+            },
+            {
+              "id": "s-1795516777267_47gx",
+              "order": 12,
+              "fileName": "صورة-11---تحط-شغلات.png",
+              "caption": "صورة 11 تحط شغلات",
+              "thumbUrl": "assets/thumbs/img_1795516777267_47gx.webp",
+              "fullUrl": "assets/full/img_1795516777267_47gx.webp"
+            },
+            {
+              "id": "s-1795516777681_je81",
+              "order": 13,
+              "fileName": "صورة-12---ياخذ-شغلات.png",
+              "caption": "صورة 12 ياخذ شغلات",
+              "thumbUrl": "assets/thumbs/img_1795516777681_je81.webp",
+              "fullUrl": "assets/full/img_1795516777681_je81.webp"
+            },
+            {
+              "id": "s-1795516778095_xtld",
+              "order": 14,
+              "fileName": "صورة-13---نهاية.png",
+              "caption": "صورة 13 نهاية",
+              "thumbUrl": "assets/thumbs/img_1795516778095_xtld.webp",
+              "fullUrl": "assets/full/img_1795516778095_xtld.webp"
+            }
+          ]
+        },
+        {
+          "id": "proj-1795516697344",
+          "order": 2,
           "fileName": "project_02",
           "title": "كاروسيل «شلون تسجل بكلية التميز؟»",
           "category": "",
@@ -102,7 +238,7 @@
         },
         {
           "id": "proj-1795516583264",
-          "order": 2,
+          "order": 3,
           "fileName": "project_01",
           "title": "بوست «افتتاح نادي الروبوتات»",
           "category": "",
