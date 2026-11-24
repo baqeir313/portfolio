@@ -20,6 +20,16 @@
       "accent": "#006eff",
       "accentRgb": "0, 110, 255",
       "projects": []
+    },
+    {
+      "id": "cnq313",
+      "order": 2,
+      "tag": "education",
+      "title": "مركز القلم",
+      "subtitle": "حملات تعليمية",
+      "accent": "#00e5a0",
+      "accentRgb": "0, 229, 160",
+      "projects": []
     }
   ]
 }
