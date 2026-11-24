@@ -998,55 +998,8 @@
       "accentRgb": "207, 93, 238",
       "projects": [
         {
-          "id": "proj-1795541364485",
-          "order": 1,
-          "fileName": "project_03",
-          "title": "ورشة «مهارات التواصل الفعال والقيادة»",
-          "category": "كاروسيل متسلسل",
-          "aspectRatio": "auto",
-          "naturalRatio": "1350/1800",
-          "fitMode": "contain",
-          "isLogo": false,
-          "tags": [
-            "(HUB200 × UNITAR)"
-          ],
-          "description": "تصميم إعلاني وتفصيلي لورشة «مهارات التواصل الفعال والقيادة» تحت شعار «تواصلي بثقة.. وقودي بأثر» بالتعاون مع Aziza ومعهد الأمم المتحدة للتدريب والبحث (UNITAR). صُمّم بأسلوب مؤسسي متوازن يدمج شعارات الشركاء الدوليين ويقسم محاور اليومين الأول والثاني في بنية بصرية منظمة تشجّع على التسجيل الفوري.",
-          "metrics": [
-            {
-              "val": "2",
-              "lbl": "عدد الشرائح"
-            },
-            {
-              "val": "2026",
-              "lbl": "السنة"
-            }
-          ],
-          "slides": [
-            {
-              "id": "s-1795541359965_sghv",
-              "order": 1,
-              "fileName": "ورشة مهارات التواصل - 2.jpg",
-              "caption": "ورشة مهارات التواصل   2",
-              "thumbUrl": "assets/thumbs/img_1795541359965_sghv.webp",
-              "fullUrl": "assets/full/img_1795541359965_sghv.webp",
-              "w": 1350,
-              "h": 1800
-            },
-            {
-              "id": "s-1795541360242_iw0h",
-              "order": 2,
-              "fileName": "ورشة مهارات التواصل -1.jpg",
-              "caption": "ورشة مهارات التواصل  1",
-              "thumbUrl": "assets/thumbs/img_1795541360242_iw0h.webp",
-              "fullUrl": "assets/full/img_1795541360242_iw0h.webp",
-              "w": 1350,
-              "h": 1800
-            }
-          ]
-        },
-        {
           "id": "proj-1795541300474",
-          "order": 2,
+          "order": 1,
           "fileName": "project_02",
           "title": "حملة ورشة «نخابرك بعدين — صناعة الـ CV الناجح»",
           "category": "كاروسيل متسلسل",
@@ -1113,7 +1066,7 @@
         },
         {
           "id": "proj-1795541156912",
-          "order": 3,
+          "order": 2,
           "fileName": "project_01",
           "title": "حملة ورشة «فكر بالمقلوب»",
           "category": "كاروسيل متسلسل",
@@ -1174,6 +1127,53 @@
               "thumbUrl": "assets/thumbs/img_1795541126449_z25i.webp",
               "fullUrl": "assets/full/img_1795541126449_z25i.webp",
               "w": 1440,
+              "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795541364485",
+          "order": 3,
+          "fileName": "project_03",
+          "title": "ورشة «مهارات التواصل الفعال والقيادة»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1350/1800",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "(HUB200 × UNITAR)"
+          ],
+          "description": "تصميم إعلاني وتفصيلي لورشة «مهارات التواصل الفعال والقيادة» تحت شعار «تواصلي بثقة.. وقودي بأثر» بالتعاون مع Aziza ومعهد الأمم المتحدة للتدريب والبحث (UNITAR). صُمّم بأسلوب مؤسسي متوازن يدمج شعارات الشركاء الدوليين ويقسم محاور اليومين الأول والثاني في بنية بصرية منظمة تشجّع على التسجيل الفوري.",
+          "metrics": [
+            {
+              "val": "2",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795541359965_sghv",
+              "order": 1,
+              "fileName": "ورشة مهارات التواصل - 2.jpg",
+              "caption": "ورشة مهارات التواصل   2",
+              "thumbUrl": "assets/thumbs/img_1795541359965_sghv.webp",
+              "fullUrl": "assets/full/img_1795541359965_sghv.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795541360242_iw0h",
+              "order": 2,
+              "fileName": "ورشة مهارات التواصل -1.jpg",
+              "caption": "ورشة مهارات التواصل  1",
+              "thumbUrl": "assets/thumbs/img_1795541360242_iw0h.webp",
+              "fullUrl": "assets/full/img_1795541360242_iw0h.webp",
+              "w": 1350,
               "h": 1800
             }
           ]
