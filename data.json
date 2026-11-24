@@ -565,209 +565,8 @@
       "accentRgb": "0, 229, 160",
       "projects": [
         {
-          "id": "proj-1795540655204",
-          "order": 1,
-          "fileName": "project_06",
-          "title": "كاروسيل «خرافات دراسية — أخطاء شائعة»",
-          "category": "كاروسيل متسلسل",
-          "aspectRatio": "auto",
-          "naturalRatio": "1086/1448",
-          "fitMode": "contain",
-          "isLogo": false,
-          "tags": [
-            "مركز القلم"
-          ],
-          "description": "سلسلة كاروسيل تعليمية من 5 شرائح تصحّح المفاهيم الدراسية المغلوطة لدى الطلبة (مثل ربط قوة الحفظ برفع الصوت) عبر أسلوب مقارنة «الخرافة مقابل الحقيقة»، مع ربطها في الختام ببيئة مركز القلم القائمة على أسس علمية. ركّز التصميم على التباين الطباعي لتمييز الخطأ عن الصواب وجذب انتباه الطالب بسرعة.",
-          "metrics": [
-            {
-              "val": "5",
-              "lbl": "عدد الشرائح"
-            },
-            {
-              "val": "2026",
-              "lbl": "السنة"
-            }
-          ],
-          "slides": [
-            {
-              "id": "s-1795540650944_htbd",
-              "order": 1,
-              "fileName": "1.png",
-              "caption": "1",
-              "thumbUrl": "assets/thumbs/img_1795540650944_htbd.webp",
-              "fullUrl": "assets/full/img_1795540650944_htbd.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540651136_n045",
-              "order": 2,
-              "fileName": "2.png",
-              "caption": "2",
-              "thumbUrl": "assets/thumbs/img_1795540651136_n045.webp",
-              "fullUrl": "assets/full/img_1795540651136_n045.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540651332_ofhw",
-              "order": 3,
-              "fileName": "3.png",
-              "caption": "3",
-              "thumbUrl": "assets/thumbs/img_1795540651332_ofhw.webp",
-              "fullUrl": "assets/full/img_1795540651332_ofhw.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540651523_kwbl",
-              "order": 4,
-              "fileName": "4.png",
-              "caption": "4",
-              "thumbUrl": "assets/thumbs/img_1795540651523_kwbl.webp",
-              "fullUrl": "assets/full/img_1795540651523_kwbl.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540651705_94on",
-              "order": 5,
-              "fileName": "5.png",
-              "caption": "5",
-              "thumbUrl": "assets/thumbs/img_1795540651705_94on.webp",
-              "fullUrl": "assets/full/img_1795540651705_94on.webp",
-              "w": 1086,
-              "h": 1448
-            }
-          ]
-        },
-        {
-          "id": "proj-1795540597223",
-          "order": 2,
-          "fileName": "project_05",
-          "title": "كاروسيل «خطوات تلخيص كتاب — برنامج قراءة كتاب»",
-          "category": "كاروسيل متسلسل",
-          "aspectRatio": "auto",
-          "naturalRatio": "1086/1448",
-          "fitMode": "contain",
-          "isLogo": false,
-          "tags": [
-            "مركز القلم"
-          ],
-          "description": "كاروسيل تثقيفي من 4 شرائح يشرح خطوات عملية لتلخيص الكتب (قاعدة الجملة الواحدة، ربط الأفكار، والمشاركة لترسيخ الفهم) ويبرز أثر برنامج «قراءة كتاب» في المركز بأكثر من 996 ساعة معرفة وإلقاء. صُمّم بهوية تحريرية مستوحاة من الكتب والمطبوعات لإضفاء طابع معرفي أنيق.",
-          "metrics": [
-            {
-              "val": "4",
-              "lbl": "عدد الشرائح"
-            },
-            {
-              "val": "2026",
-              "lbl": "السنة"
-            }
-          ],
-          "slides": [
-            {
-              "id": "s-1795540592819_gfmr",
-              "order": 1,
-              "fileName": "1.png",
-              "caption": "1",
-              "thumbUrl": "assets/thumbs/img_1795540592819_gfmr.webp",
-              "fullUrl": "assets/full/img_1795540592819_gfmr.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540593014_8x5k",
-              "order": 2,
-              "fileName": "2.png",
-              "caption": "2",
-              "thumbUrl": "assets/thumbs/img_1795540593014_8x5k.webp",
-              "fullUrl": "assets/full/img_1795540593014_8x5k.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540593235_n7xu",
-              "order": 3,
-              "fileName": "3.png",
-              "caption": "3",
-              "thumbUrl": "assets/thumbs/img_1795540593235_n7xu.webp",
-              "fullUrl": "assets/full/img_1795540593235_n7xu.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540593428_o6u7",
-              "order": 4,
-              "fileName": "4.png",
-              "caption": "4",
-              "thumbUrl": "assets/thumbs/img_1795540593428_o6u7.webp",
-              "fullUrl": "assets/full/img_1795540593428_o6u7.webp",
-              "w": 1086,
-              "h": 1448
-            }
-          ]
-        },
-        {
-          "id": "proj-1795540480880",
-          "order": 3,
-          "fileName": "project_04",
-          "title": "تصميم «جدول الدروس الثقافية ليوم الجمعة»",
-          "category": "بوست سوشيال",
-          "aspectRatio": "auto",
-          "naturalRatio": "1086/1448",
-          "fitMode": "contain",
-          "isLogo": false,
-          "tags": [
-            "مركز القلم"
-          ],
-          "description": "تحويل الجداول الورقية للجلسات الثقافية والروحانية الأسبوعية (الفكرية الدينية، برنامج أقرأ، والفعاليات الهادفة) إلى تصميم رقمي رسمي ومنظم لطلبة المراحل الإعدادية والمتوسطة. ركّز التصميم على الشبكة الجدولية الواضحة لتمكين الطالب من قراءة الأوقات والأساتذة بلمحة واحدة على شاشة الهاتف.",
-          "metrics": [
-            {
-              "val": "3",
-              "lbl": "عدد الشرائح"
-            },
-            {
-              "val": "2026",
-              "lbl": "السنة"
-            }
-          ],
-          "slides": [
-            {
-              "id": "s-1795540476865_e2xx",
-              "order": 1,
-              "fileName": "الثالث_9-11.png",
-              "caption": "الثالث 9 11",
-              "thumbUrl": "assets/thumbs/img_1795540476865_e2xx.webp",
-              "fullUrl": "assets/full/img_1795540476865_e2xx.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540477049_o05u",
-              "order": 2,
-              "fileName": "الخامس_9-11.png",
-              "caption": "الخامس 9 11",
-              "thumbUrl": "assets/thumbs/img_1795540477049_o05u.webp",
-              "fullUrl": "assets/full/img_1795540477049_o05u.webp",
-              "w": 1086,
-              "h": 1448
-            },
-            {
-              "id": "s-1795540477218_9n1e",
-              "order": 3,
-              "fileName": "الرابع_9-11.png",
-              "caption": "الرابع 9 11",
-              "thumbUrl": "assets/thumbs/img_1795540477218_9n1e.webp",
-              "fullUrl": "assets/full/img_1795540477218_9n1e.webp",
-              "w": 1086,
-              "h": 1448
-            }
-          ]
-        },
-        {
           "id": "proj-1795540388970",
-          "order": 4,
+          "order": 1,
           "fileName": "project_03",
           "title": "كاروسيل «دليل أولياء الأمور — ابنك رايح للثالث؟»",
           "category": "كاروسيل متسلسل",
@@ -863,22 +662,22 @@
           ]
         },
         {
-          "id": "proj-1795540301458",
-          "order": 5,
-          "fileName": "project_02",
-          "title": "صيف الفلم",
-          "category": "بوست سوشال",
+          "id": "proj-1795540655204",
+          "order": 2,
+          "fileName": "project_06",
+          "title": "كاروسيل «خرافات دراسية — أخطاء شائعة»",
+          "category": "كاروسيل متسلسل",
           "aspectRatio": "auto",
-          "naturalRatio": "1450/1800",
+          "naturalRatio": "1086/1448",
           "fitMode": "contain",
           "isLogo": false,
           "tags": [
             "مركز القلم"
           ],
-          "description": "البوستر الإعلاني الرئيسي لحملة البرامج الصيفية لطلبة الثالث المتوسط في مركز القلم التربوي التعليمي تحت شعار «أول وزاري بحياة ابنك.. خليه يبدأه واثق». يستهدف التصميم أولياء الأمور والطلبة، ويبرز مزايا البرنامج (التدريب الوزاري، الجدول الشخصي، البرامج الثقافية، والبيئة الإبداعية) بتكوين بصري دافئ ومطمئن يعكس الثقة والانضباط الأكاديمي.",
+          "description": "سلسلة كاروسيل تعليمية من 5 شرائح تصحّح المفاهيم الدراسية المغلوطة لدى الطلبة (مثل ربط قوة الحفظ برفع الصوت) عبر أسلوب مقارنة «الخرافة مقابل الحقيقة»، مع ربطها في الختام ببيئة مركز القلم القائمة على أسس علمية. ركّز التصميم على التباين الطباعي لتمييز الخطأ عن الصواب وجذب انتباه الطالب بسرعة.",
           "metrics": [
             {
-              "val": "1",
+              "val": "5",
               "lbl": "عدد الشرائح"
             },
             {
@@ -888,20 +687,117 @@
           ],
           "slides": [
             {
-              "id": "s-1795540297682_42iq",
+              "id": "s-1795540650944_htbd",
               "order": 1,
-              "fileName": "صيف-القلم (1).jpg",
-              "caption": "صيف القلم (1)",
-              "thumbUrl": "assets/thumbs/img_1795540297682_42iq.webp",
-              "fullUrl": "assets/full/img_1795540297682_42iq.webp",
-              "w": 1450,
-              "h": 1800
+              "fileName": "1.png",
+              "caption": "1",
+              "thumbUrl": "assets/thumbs/img_1795540650944_htbd.webp",
+              "fullUrl": "assets/full/img_1795540650944_htbd.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651136_n045",
+              "order": 2,
+              "fileName": "2.png",
+              "caption": "2",
+              "thumbUrl": "assets/thumbs/img_1795540651136_n045.webp",
+              "fullUrl": "assets/full/img_1795540651136_n045.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651332_ofhw",
+              "order": 3,
+              "fileName": "3.png",
+              "caption": "3",
+              "thumbUrl": "assets/thumbs/img_1795540651332_ofhw.webp",
+              "fullUrl": "assets/full/img_1795540651332_ofhw.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651523_kwbl",
+              "order": 4,
+              "fileName": "4.png",
+              "caption": "4",
+              "thumbUrl": "assets/thumbs/img_1795540651523_kwbl.webp",
+              "fullUrl": "assets/full/img_1795540651523_kwbl.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540651705_94on",
+              "order": 5,
+              "fileName": "5.png",
+              "caption": "5",
+              "thumbUrl": "assets/thumbs/img_1795540651705_94on.webp",
+              "fullUrl": "assets/full/img_1795540651705_94on.webp",
+              "w": 1086,
+              "h": 1448
+            }
+          ]
+        },
+        {
+          "id": "proj-1795540480880",
+          "order": 3,
+          "fileName": "project_04",
+          "title": "تصميم «جدول الدروس الثقافية ليوم الجمعة»",
+          "category": "بوست سوشيال",
+          "aspectRatio": "auto",
+          "naturalRatio": "1086/1448",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "تحويل الجداول الورقية للجلسات الثقافية والروحانية الأسبوعية (الفكرية الدينية، برنامج أقرأ، والفعاليات الهادفة) إلى تصميم رقمي رسمي ومنظم لطلبة المراحل الإعدادية والمتوسطة. ركّز التصميم على الشبكة الجدولية الواضحة لتمكين الطالب من قراءة الأوقات والأساتذة بلمحة واحدة على شاشة الهاتف.",
+          "metrics": [
+            {
+              "val": "3",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540476865_e2xx",
+              "order": 1,
+              "fileName": "الثالث_9-11.png",
+              "caption": "الثالث 9 11",
+              "thumbUrl": "assets/thumbs/img_1795540476865_e2xx.webp",
+              "fullUrl": "assets/full/img_1795540476865_e2xx.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540477049_o05u",
+              "order": 2,
+              "fileName": "الخامس_9-11.png",
+              "caption": "الخامس 9 11",
+              "thumbUrl": "assets/thumbs/img_1795540477049_o05u.webp",
+              "fullUrl": "assets/full/img_1795540477049_o05u.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540477218_9n1e",
+              "order": 3,
+              "fileName": "الرابع_9-11.png",
+              "caption": "الرابع 9 11",
+              "thumbUrl": "assets/thumbs/img_1795540477218_9n1e.webp",
+              "fullUrl": "assets/full/img_1795540477218_9n1e.webp",
+              "w": 1086,
+              "h": 1448
             }
           ]
         },
         {
           "id": "proj-1795540091805",
-          "order": 6,
+          "order": 4,
           "fileName": "project_01",
           "title": "سلسلة تكريم «أوائل مركز القلم»",
           "category": "كاروسيل متسلسل",
@@ -983,6 +879,110 @@
               "fullUrl": "assets/full/img_1795540052624_t4l2.webp",
               "w": 1344,
               "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795540301458",
+          "order": 5,
+          "fileName": "project_02",
+          "title": "صيف الفلم",
+          "category": "بوست سوشال",
+          "aspectRatio": "auto",
+          "naturalRatio": "1450/1800",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "البوستر الإعلاني الرئيسي لحملة البرامج الصيفية لطلبة الثالث المتوسط في مركز القلم التربوي التعليمي تحت شعار «أول وزاري بحياة ابنك.. خليه يبدأه واثق». يستهدف التصميم أولياء الأمور والطلبة، ويبرز مزايا البرنامج (التدريب الوزاري، الجدول الشخصي، البرامج الثقافية، والبيئة الإبداعية) بتكوين بصري دافئ ومطمئن يعكس الثقة والانضباط الأكاديمي.",
+          "metrics": [
+            {
+              "val": "1",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540297682_42iq",
+              "order": 1,
+              "fileName": "صيف-القلم (1).jpg",
+              "caption": "صيف القلم (1)",
+              "thumbUrl": "assets/thumbs/img_1795540297682_42iq.webp",
+              "fullUrl": "assets/full/img_1795540297682_42iq.webp",
+              "w": 1450,
+              "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795540597223",
+          "order": 6,
+          "fileName": "project_05",
+          "title": "كاروسيل «خطوات تلخيص كتاب — برنامج قراءة كتاب»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1086/1448",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "كاروسيل تثقيفي من 4 شرائح يشرح خطوات عملية لتلخيص الكتب (قاعدة الجملة الواحدة، ربط الأفكار، والمشاركة لترسيخ الفهم) ويبرز أثر برنامج «قراءة كتاب» في المركز بأكثر من 996 ساعة معرفة وإلقاء. صُمّم بهوية تحريرية مستوحاة من الكتب والمطبوعات لإضفاء طابع معرفي أنيق.",
+          "metrics": [
+            {
+              "val": "4",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540592819_gfmr",
+              "order": 1,
+              "fileName": "1.png",
+              "caption": "1",
+              "thumbUrl": "assets/thumbs/img_1795540592819_gfmr.webp",
+              "fullUrl": "assets/full/img_1795540592819_gfmr.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540593014_8x5k",
+              "order": 2,
+              "fileName": "2.png",
+              "caption": "2",
+              "thumbUrl": "assets/thumbs/img_1795540593014_8x5k.webp",
+              "fullUrl": "assets/full/img_1795540593014_8x5k.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540593235_n7xu",
+              "order": 3,
+              "fileName": "3.png",
+              "caption": "3",
+              "thumbUrl": "assets/thumbs/img_1795540593235_n7xu.webp",
+              "fullUrl": "assets/full/img_1795540593235_n7xu.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540593428_o6u7",
+              "order": 4,
+              "fileName": "4.png",
+              "caption": "4",
+              "thumbUrl": "assets/thumbs/img_1795540593428_o6u7.webp",
+              "fullUrl": "assets/full/img_1795540593428_o6u7.webp",
+              "w": 1086,
+              "h": 1448
             }
           ]
         }
