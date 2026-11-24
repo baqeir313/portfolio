@@ -429,53 +429,8 @@
           ]
         },
         {
-          "id": "proj-1795539693649",
-          "order": 8,
-          "fileName": "project_07",
-          "title": "اليوم المفتوح",
-          "category": "",
-          "aspectRatio": "auto",
-          "naturalRatio": "1350/1800",
-          "fitMode": "contain",
-          "isLogo": false,
-          "tags": [],
-          "description": "تصاميم إعلانية لفعالية «اليوم المفتوح» في مجمع الجادرية بجامعة بغداد، تستهدف الطلبة الراغبين بالتعرف على أقسام الكلية ميدانياً. اعتمد التصميم على إبراز التاريخ والتوقيت والمكان بتكوين هندسي متوازن يرفع من وضوح المعلومات الأساسية ويدفع للتسجيل المسبق.",
-          "metrics": [
-            {
-              "val": "2",
-              "lbl": "عدد الشرائح"
-            },
-            {
-              "val": "2026",
-              "lbl": "السنة"
-            }
-          ],
-          "slides": [
-            {
-              "id": "s-1795539668035_1bp3",
-              "order": 1,
-              "fileName": "open-day---1.png",
-              "caption": "open day 1",
-              "thumbUrl": "assets/thumbs/img_1795539668035_1bp3.webp",
-              "fullUrl": "assets/full/img_1795539668035_1bp3.webp",
-              "w": 1350,
-              "h": 1800
-            },
-            {
-              "id": "s-1795539668389_54mk",
-              "order": 2,
-              "fileName": "open-day---2.png",
-              "caption": "open day 2",
-              "thumbUrl": "assets/thumbs/img_1795539668389_54mk.webp",
-              "fullUrl": "assets/full/img_1795539668389_54mk.webp",
-              "w": 1441,
-              "h": 1800
-            }
-          ]
-        },
-        {
           "id": "proj-1795539376455",
-          "order": 9,
+          "order": 8,
           "fileName": "project_07",
           "title": "بوستر «بطولة كرة القدم»",
           "category": "بوستر",
@@ -514,6 +469,51 @@
               "thumbUrl": "assets/thumbs/img_1795539431691_zeg0.webp",
               "fullUrl": "assets/full/img_1795539431691_zeg0.webp",
               "w": 1344,
+              "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795539693649",
+          "order": 9,
+          "fileName": "project_07",
+          "title": "اليوم المفتوح",
+          "category": "",
+          "aspectRatio": "auto",
+          "naturalRatio": "1350/1800",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [],
+          "description": "تصاميم إعلانية لفعالية «اليوم المفتوح» في مجمع الجادرية بجامعة بغداد، تستهدف الطلبة الراغبين بالتعرف على أقسام الكلية ميدانياً. اعتمد التصميم على إبراز التاريخ والتوقيت والمكان بتكوين هندسي متوازن يرفع من وضوح المعلومات الأساسية ويدفع للتسجيل المسبق.",
+          "metrics": [
+            {
+              "val": "2",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795539668035_1bp3",
+              "order": 1,
+              "fileName": "open-day---1.png",
+              "caption": "open day 1",
+              "thumbUrl": "assets/thumbs/img_1795539668035_1bp3.webp",
+              "fullUrl": "assets/full/img_1795539668035_1bp3.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795539668389_54mk",
+              "order": 2,
+              "fileName": "open-day---2.png",
+              "caption": "open day 2",
+              "thumbUrl": "assets/thumbs/img_1795539668389_54mk.webp",
+              "fullUrl": "assets/full/img_1795539668389_54mk.webp",
+              "w": 1441,
               "h": 1800
             }
           ]
