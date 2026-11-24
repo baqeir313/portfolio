@@ -460,8 +460,75 @@
       "accentRgb": "0, 229, 160",
       "projects": [
         {
-          "id": "proj-1795540480880",
+          "id": "proj-1795540597223",
           "order": 1,
+          "fileName": "project_05",
+          "title": "كاروسيل «خطوات تلخيص كتاب — برنامج قراءة كتاب»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1086/1448",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "كاروسيل تثقيفي من 4 شرائح يشرح خطوات عملية لتلخيص الكتب (قاعدة الجملة الواحدة، ربط الأفكار، والمشاركة لترسيخ الفهم) ويبرز أثر برنامج «قراءة كتاب» في المركز بأكثر من 996 ساعة معرفة وإلقاء. صُمّم بهوية تحريرية مستوحاة من الكتب والمطبوعات لإضفاء طابع معرفي أنيق.",
+          "metrics": [
+            {
+              "val": "4",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540592819_gfmr",
+              "order": 1,
+              "fileName": "1.png",
+              "caption": "1",
+              "thumbUrl": "assets/thumbs/img_1795540592819_gfmr.webp",
+              "fullUrl": "assets/full/img_1795540592819_gfmr.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540593014_8x5k",
+              "order": 2,
+              "fileName": "2.png",
+              "caption": "2",
+              "thumbUrl": "assets/thumbs/img_1795540593014_8x5k.webp",
+              "fullUrl": "assets/full/img_1795540593014_8x5k.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540593235_n7xu",
+              "order": 3,
+              "fileName": "3.png",
+              "caption": "3",
+              "thumbUrl": "assets/thumbs/img_1795540593235_n7xu.webp",
+              "fullUrl": "assets/full/img_1795540593235_n7xu.webp",
+              "w": 1086,
+              "h": 1448
+            },
+            {
+              "id": "s-1795540593428_o6u7",
+              "order": 4,
+              "fileName": "4.png",
+              "caption": "4",
+              "thumbUrl": "assets/thumbs/img_1795540593428_o6u7.webp",
+              "fullUrl": "assets/full/img_1795540593428_o6u7.webp",
+              "w": 1086,
+              "h": 1448
+            }
+          ]
+        },
+        {
+          "id": "proj-1795540480880",
+          "order": 2,
           "fileName": "project_04",
           "title": "تصميم «جدول الدروس الثقافية ليوم الجمعة»",
           "category": "بوست سوشيال",
@@ -518,7 +585,7 @@
         },
         {
           "id": "proj-1795540388970",
-          "order": 2,
+          "order": 3,
           "fileName": "project_03",
           "title": "كاروسيل «دليل أولياء الأمور — ابنك رايح للثالث؟»",
           "category": "كاروسيل متسلسل",
@@ -615,7 +682,7 @@
         },
         {
           "id": "proj-1795540301458",
-          "order": 3,
+          "order": 4,
           "fileName": "project_02",
           "title": "صيف الفلم",
           "category": "بوست سوشال",
@@ -652,7 +719,7 @@
         },
         {
           "id": "proj-1795540091805",
-          "order": 4,
+          "order": 5,
           "fileName": "project_01",
           "title": "سلسلة تكريم «أوائل مركز القلم»",
           "category": "كاروسيل متسلسل",
