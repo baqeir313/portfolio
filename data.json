@@ -460,8 +460,105 @@
       "accentRgb": "0, 229, 160",
       "projects": [
         {
-          "id": "proj-1795540301458",
+          "id": "proj-1795540388970",
           "order": 1,
+          "fileName": "project_03",
+          "title": "كاروسيل «دليل أولياء الأمور — ابنك رايح للثالث؟»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1350/1800",
+          "fitMode": "contain",
+          "isLogo": false,
+          "tags": [
+            "مركز القلم"
+          ],
+          "description": "كاروسيل توعوي من 7 شرائح موجّه لأولياء أمور طلبة الثالث المتوسط، يوضح احتياجات الطالب في العطلة الصيفية (تأسيس المواد، الجدول والمتابعة، والتعرف على السؤال الوزاري) ودور الأهل العملي في التشجيع وتنظيم النوم والهاتف. اعتمد التنفيذ البصري على تسلسل سردي مريح للعين وبطاقات نقطية منظمة تشجع على الحفظ والمشاركة.",
+          "metrics": [
+            {
+              "val": "7",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795540377437_tnxg",
+              "order": 1,
+              "fileName": "(1).jpg",
+              "caption": "(1)",
+              "thumbUrl": "assets/thumbs/img_1795540377437_tnxg.webp",
+              "fullUrl": "assets/full/img_1795540377437_tnxg.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540377977_adn3",
+              "order": 2,
+              "fileName": "(2).jpg",
+              "caption": "(2)",
+              "thumbUrl": "assets/thumbs/img_1795540377977_adn3.webp",
+              "fullUrl": "assets/full/img_1795540377977_adn3.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540378536_7dmz",
+              "order": 3,
+              "fileName": "(3).jpg",
+              "caption": "(3)",
+              "thumbUrl": "assets/thumbs/img_1795540378536_7dmz.webp",
+              "fullUrl": "assets/full/img_1795540378536_7dmz.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540379062_gu47",
+              "order": 4,
+              "fileName": "(4).jpg",
+              "caption": "(4)",
+              "thumbUrl": "assets/thumbs/img_1795540379062_gu47.webp",
+              "fullUrl": "assets/full/img_1795540379062_gu47.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540379628_tioe",
+              "order": 5,
+              "fileName": "(5).jpg",
+              "caption": "(5)",
+              "thumbUrl": "assets/thumbs/img_1795540379628_tioe.webp",
+              "fullUrl": "assets/full/img_1795540379628_tioe.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540380105_r6rt",
+              "order": 6,
+              "fileName": "(6).jpg",
+              "caption": "(6)",
+              "thumbUrl": "assets/thumbs/img_1795540380105_r6rt.webp",
+              "fullUrl": "assets/full/img_1795540380105_r6rt.webp",
+              "w": 1350,
+              "h": 1800
+            },
+            {
+              "id": "s-1795540380552_jf3v",
+              "order": 7,
+              "fileName": "(7).jpg",
+              "caption": "(7)",
+              "thumbUrl": "assets/thumbs/img_1795540380552_jf3v.webp",
+              "fullUrl": "assets/full/img_1795540380552_jf3v.webp",
+              "w": 1350,
+              "h": 1800
+            }
+          ]
+        },
+        {
+          "id": "proj-1795540301458",
+          "order": 2,
           "fileName": "project_02",
           "title": "صيف الفلم",
           "category": "بوست سوشال",
@@ -498,7 +595,7 @@
         },
         {
           "id": "proj-1795540091805",
-          "order": 2,
+          "order": 3,
           "fileName": "project_01",
           "title": "سلسلة تكريم «أوائل مركز القلم»",
           "category": "كاروسيل متسلسل",
