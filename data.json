@@ -882,6 +882,84 @@
           ]
         }
       ]
+    },
+    {
+      "id": "folder-1795541027979",
+      "order": 3,
+      "tag": "social media",
+      "title": "HUB200 × Aziza",
+      "subtitle": "",
+      "accent": "#cf5dee",
+      "accentRgb": "207, 93, 238",
+      "projects": [
+        {
+          "id": "proj-1795541156912",
+          "order": 1,
+          "fileName": "project_01",
+          "title": "حملة ورشة «فكر بالمقلوب»",
+          "category": "كاروسيل متسلسل",
+          "aspectRatio": "auto",
+          "naturalRatio": "1440/1800",
+          "fitMode": "contain",
+          "isLogo": true,
+          "tags": [
+            "HUB200 × Aziza × CTA.Writers"
+          ],
+          "description": "سلسلة تصاميم إعلانية لورشة «فكر بالمقلوب» الإبداعية في HUB200 الكرادة بالتعاون مع Aziza وCTA.Writers ومُمَول، تستهدف كُتاب المحتوى والعاملين في التسويق والمجالات الإبداعية لتطوير التفكير خارج الأنماط التقليدية. اعتمد التنفيذ البصري على تكوين جريء وغير مألوف يبرز المتحدثات ومحاور الورشة وتفاصيل الموعد بوضوح عالٍ.",
+          "metrics": [
+            {
+              "val": "4",
+              "lbl": "عدد الشرائح"
+            },
+            {
+              "val": "2026",
+              "lbl": "السنة"
+            }
+          ],
+          "slides": [
+            {
+              "id": "s-1795541125898_ypik",
+              "order": 1,
+              "fileName": "فكر-بالمكلوب1.png",
+              "caption": "فكر بالمكلوب1",
+              "thumbUrl": "assets/thumbs/img_1795541125898_ypik.webp",
+              "fullUrl": "assets/full/img_1795541125898_ypik.webp",
+              "w": 1440,
+              "h": 1800
+            },
+            {
+              "id": "s-1795541126030_5oya",
+              "order": 2,
+              "fileName": "فكر-بالمكلوب2.png",
+              "caption": "فكر بالمكلوب2",
+              "thumbUrl": "assets/thumbs/img_1795541126030_5oya.webp",
+              "fullUrl": "assets/full/img_1795541126030_5oya.webp",
+              "w": 1080,
+              "h": 1350
+            },
+            {
+              "id": "s-1795541126231_vutk",
+              "order": 3,
+              "fileName": "فكر-بالمكلوب3.png",
+              "caption": "فكر بالمكلوب3",
+              "thumbUrl": "assets/thumbs/img_1795541126231_vutk.webp",
+              "fullUrl": "assets/full/img_1795541126231_vutk.webp",
+              "w": 1440,
+              "h": 1800
+            },
+            {
+              "id": "s-1795541126449_z25i",
+              "order": 4,
+              "fileName": "فكر-بالمكلوب4.png",
+              "caption": "فكر بالمكلوب4",
+              "thumbUrl": "assets/thumbs/img_1795541126449_z25i.webp",
+              "fullUrl": "assets/full/img_1795541126449_z25i.webp",
+              "w": 1440,
+              "h": 1800
+            }
+          ]
+        }
+      ]
     }
   ]
 }
